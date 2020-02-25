@@ -1,0 +1,15 @@
+body {
+  background-color: white;
+}
+
+header {
+  height: 10rem;
+}
+
+main {
+  height: calc(100vh - 20rem);
+}
+
+footer {
+  height: 10rem;
+}
