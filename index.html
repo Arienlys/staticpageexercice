@@ -9,13 +9,73 @@
   </head>
   <body>
     <header>
-      <nav>Navabar</nav>
+      <a href="#"><img id="logo" src="Images\logo.png"/></a>
+
+      <div id="Utility">
+        <div id="Hours" style="display:flex">
+        <img id="" src="Images/Hours.png" class="imghead"/>
+        <p class="topnavtxt">BOARDING HOURS<br>Mon - Sat: 7:00 am - 6:00 pm</p>
+        </div>
+        <div id="Phone" style="display:flex">
+        <img id="" src="Images/Phone.png" class="imghead"/>
+        <p class="topnavtxt">CALL US<br>(555) Pup-Cares</p>
+        </div>
+        <div id="CTA" style="display:flex">
+        <button type="submit">
+        <a class="topnavtxt" href="#popup1" style="text-decoration: none;">MAKE AN APPOINTMENT</a>
+        </button>
+        </div>
+      </div>
+<br>
+      <nav id="topnav">
+        <div class="navtext">
+          <ul style="display:flex; justify-content: space-between;">
+            <div class="dropdown">
+              <button href="dropbtn">Services <img src="Images/expand.png" style="vertical-align: sub">
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Nico </a>
+                <a href="#">is </a>
+                <a href="#">the best</a>
+              </div>
+            </div>
+           <div><a href="#popup1">Specials</a></div>
+           <div><a href="#popup1">Facilities</a></div>
+           <div><a href="#popup1">Reviews</a></div>
+           <div class="dropdown">
+            <button href="dropbtn">Shop <img src="Images/expand.png" style="vertical-align: sub">
+            </button>
+            <div class="dropdown-content">
+              <a href="#">you</a>
+              <a href="#">are</a>
+              <a href="#">awesome :v</a>
+            </div>
+          </div>
+          <div><a href="#popup1">About</a></div>
+          </ul>
+          </div>
+         <div class="navicon">
+          <a href="#popup1" style="width:24px; height:24px"><img src="Images/search.png"></a>
+          <a href="#popup1" style="width:24px; height:24px"><img src="Images/shopping.png"/></a>
+          </div>
+      </nav>
     </header>
     <main>
+      <img id="background" src="Images/headerback.png">
       Main
     </main>
     <footer>
       footer
     </footer>
+
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>Here i am</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          Yes, this button works :>.
+        </div>
+      </div>
+    </div>
   </body>
 </html>
