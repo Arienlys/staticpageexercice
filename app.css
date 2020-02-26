@@ -4,23 +4,18 @@ body {
   margin: 0;
 }
 
-#background{
-  position: sticky;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  width:100vw;
-  z-index: -10;
+/** ~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~ **/
+header{
+  height:10rem;
 }
 
-/** ~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~ **/
-header {
+.header {
   /*height: 10rem;*/
   position: absolute;
   width: 76%;
   height: 128px;
   top: 26px;
-  margin: 0 12% 0 12%;
+  margin: 0 14%;
 }
 
 .imghead{
@@ -49,12 +44,14 @@ header {
   justify-content:space-between;
 }
 
-#CTA{
+.CTA{
   padding-right:20px;
   padding-left:20px;
   align-content: center;
   background-color: #F2726F;
   border-radius: 5px;
+  display:flex;
+  justify-content: center;
 }
 
 .topnavtxt{
@@ -154,9 +151,46 @@ nav a, nav button {
 }
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~MAIN~~~~~~~~~~~~~~~~~~~~~~~ **/
-main {
+/*main {
   height: calc(100vh - 20rem);
-  top: 800px;
+}*/
+
+.maintitle{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.mainh1{
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 42px;
+}
+
+.maintxt{
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.15px;
+}
+
+.mainh2{
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 19px;
+line-height: 26px;
+color: #F2726F;
 }
 
 button{
@@ -165,9 +199,118 @@ button{
   z-index:2;
 }
 
+/** ~~~~~~~~~~~~IMAGE~~~~~~~~~~~~ **/
+#image{
+  position:absolute;
+  top: 0;
+  z-index:-2;
+  background-image: url("Images/headerback.png") ;
+  background-position-x: center;
+  background-size:cover;
+  height:800px;
+  width:100%;
+}
+
+/** ~~~~~~~~~~~~JUMBOTRON~~~~~~~~~~~~ **/
+#jumbotron{
+  margin: 7rem 14%;
+  height:21rem;
+}
+
+#jumbotron .CTA{
+  width:210px;
+  height: 50px;
+}
+
+.boxshad{
+  box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.2), 0px 8px 16px rgba(38, 38, 38, 0.24);
+}
+
+.jumbtxt{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+/** ~~~~~~~~~~~~ABOUT~~~~~~~~~~~~ **/
+#about{
+  position:relative;
+  margin: 0 14%;
+  padding: 90px 85px 0 85px;
+  background-color: #5D62B5;
+  border-radius: 40px;
+  display:flex;
+  flex-direction: column;
+}
+
+#circles{
+  position:absolute;
+  top: -105px;
+  right: -75px;
+}
+
+.abouttxt{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;  
+}
+
+#blob{
+  transform: translate(-8%,-1%);
+  width: 55%;
+  max-height: 300px;
+}
+
+#doggy1{
+  position: absolute;
+  margin: auto;
+  display: flex;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/** ~~~~~~~~~~~~VALPROP~~~~~~~~~~~~ **/
+#ValProp{
+  margin: 18rem 14% 0 14%;
+}
+
+.divVp{
+  display:flex;
+  width:30%
+}
+
+.imgVp{
+  height:65px;
+  margin-right:20px;
+  margin-top:19px;
+}
+
+/** ~~~~~~~~~~~~VIDEO~~~~~~~~~~~~ **/
+#Video{
+  display: flex;
+  margin: 7rem 0;
+  height: 500px;
+  z-index:-1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-image: url("Images/doggy2.png");
+}
+
+#VidTxt{
+  width: 30%;
+  margin-top: 6%;
+  margin-left: 55%;
+}
 /** ~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~ **/
 footer {
   height: 10rem;
+  display:flex;
 }
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~POPUP~~~~~~~~~~~~~~~~~~~~~~~ **/

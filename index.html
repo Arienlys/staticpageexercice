@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="app.css" />
-    <title>Doggy daycare</title>
-  </head>
-  <body>
-    <header>
-      <a href="#"><img id="logo" src="Images\logo.png"/></a>
 
-      <div id="Utility">
-        <div id="Hours" style="display:flex">
-        <img id="" src="Images/Hours.png" class="imghead"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="app.css" />
+  <title>Doggy daycare</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+    <a href="#"><img id="logo" src="Images\logo.png" /></a>
+
+    <!-- on top of the navbar -->
+    <div id="Utility">
+      <div id="Hours" style="display:flex">
+        <img id="" src="Images/Hours.png" class="imghead" />
         <p class="topnavtxt">BOARDING HOURS<br>Mon - Sat: 7:00 am - 6:00 pm</p>
-        </div>
-        <div id="Phone" style="display:flex">
-        <img id="" src="Images/Phone.png" class="imghead"/>
-        <p class="topnavtxt">CALL US<br>(555) Pup-Cares</p>
-        </div>
-        <div id="CTA" style="display:flex">
-        <button type="submit">
-        <a class="topnavtxt" href="#popup1" style="text-decoration: none;">MAKE AN APPOINTMENT</a>
-        </button>
-        </div>
       </div>
-<br>
-      <nav id="topnav">
-        <div class="navtext">
-          <ul style="display:flex; justify-content: space-between;">
-            <div class="dropdown">
-              <button href="dropbtn">Services <img src="Images/expand.png" style="vertical-align: sub">
-              </button>
-              <div class="dropdown-content">
-                <a href="#">Nico </a>
-                <a href="#">is </a>
-                <a href="#">the best</a>
-              </div>
+      <div id="Phone" style="display:flex">
+        <img id="" src="Images/Phone.png" class="imghead" />
+        <p class="topnavtxt">CALL US<br>(555) Pup-Cares</p>
+      </div>
+      <div class="CTA">
+        <button type="submit">
+          <a class="topnavtxt" href="#popup1" style="text-decoration: none;">MAKE AN APPOINTMENT</a>
+        </button>
+      </div>
+    </div>
+    <br>
+    <!-- Navbar -->
+    <nav id="topnav">
+      <div class="navtext">
+        <ul style="display:flex; justify-content: space-between;">
+          <div class="dropdown">
+            <button href="dropbtn">Services <img src="Images/expand.png" style="vertical-align: sub">
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Nico </a>
+              <a href="#">is </a>
+              <a href="#">the best</a>
             </div>
-           <div><a href="#popup1">Specials</a></div>
-           <div><a href="#popup1">Facilities</a></div>
-           <div><a href="#popup1">Reviews</a></div>
-           <div class="dropdown">
+          </div>
+          <a href="#popup1">Specials</a>
+          <a href="#popup1">Facilities</a>
+          <a href="#popup1">Reviews</a>
+          <div class="dropdown">
             <button href="dropbtn">Shop <img src="Images/expand.png" style="vertical-align: sub">
             </button>
             <div class="dropdown-content">
@@ -51,31 +56,102 @@
               <a href="#">awesome :v</a>
             </div>
           </div>
-          <div><a href="#popup1">About</a></div>
-          </ul>
-          </div>
-         <div class="navicon">
-          <a href="#popup1" style="width:24px; height:24px"><img src="Images/search.png"></a>
-          <a href="#popup1" style="width:24px; height:24px"><img src="Images/shopping.png"/></a>
-          </div>
-      </nav>
-    </header>
-    <main>
-      <img id="background" src="Images/headerback.png">
-      Main
-    </main>
-    <footer>
-      footer
-    </footer>
+          <a href="#popup1">About</a>
+        </ul>
+      </div>
+      <!-- right icons -->
+      <div class="navicon">
+        <a href="#popup1" style="width:24px; height:24px"><img src="Images/search.png"></a>
+        <a href="#popup1" style="width:24px; height:24px"><img src="Images/shopping.png" /></a>
+      </div>
+    </nav>
+  </div>
+  </header>
+    
+  <main>
+    <!-- Blue header picture -->
+    <div id="image"></div> 
 
-    <div id="popup1" class="overlay">
-      <div class="popup">
-        <h2>Here i am</h2>
-        <a class="close" href="#">&times;</a>
-        <div class="content">
-          Yes, this button works :>.
+    <!-- Text on the blue picture -->
+    <div id="jumbotron">
+      <p class="jumbtxt">Premier dog boarding, <br>
+      daycare & day spa</p>
+    
+      <div class="CTA boxshad" style="display:flex">
+        <button type="submit">
+          <a class="topnavtxt" href="#popup1" style="text-decoration: none;">MAKE AN APPOINTMENT</a>
+        </button>
+    </div>
+  </div>
+
+    <!-- purple box -->
+    <div id="about">
+    <img id="circles" src="Images/Circles.png"> 
+    <p class="maintitle" style="color:white">&#11048; Who we are</p>
+    <p class="mainh1" style="color:white; margin-right:40%">Nemo enim ipsam voluptatem quia voluptas in proident</p>
+    <p class="maintxt" style="color:white; margin-bottom:25px">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. 
+      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+
+      <!-- Two pictures at the bottom -->
+      <img id="blob" src="Images/Blob2.png">
+      <img id="doggy1" src="Images/doggy1.png">
+    </div>
+    
+    <!-- Valprop -->
+    <div id="ValProp">
+      <p class="maintitle" style="color:#5D62B5">&#11048; Our Promise to You</p>
+      <p class="mainh1">Sed perspiciatis omnis iste natus</p>
+
+      <!-- Three parts -->
+      <div style="display:flex; justify-content: space-between;">
+        <div class="divVp">
+          <img class="imgVp" src="Images/heart.png">
+          <div><p class="mainh2">24/7 Love & Care</p>
+          <p class="maintxt">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</p></div>
+        </div>
+
+        <div class="divVp">
+          <img class="imgVp" src="Images/vet.png">
+          <div><p class="mainh2">On-site Veterinarian</p>
+          <p class="maintxt">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</p></div>
+        </div>
+
+        <div class="divVp">
+          <img class="imgVp" src="Images/dogstream.png">
+          <div><p class="mainh2">Live-stream Cameras</p>
+          <p class="maintxt">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur illum.</p></div>
         </div>
       </div>
     </div>
-  </body>
+
+    <!-- Second Doggy ban -->
+    <div id="Video">
+      <div id="VidTxt">
+<p class="mainh1" style="color:white">Nemo enim ipsam voluptatem quia voluptas in proident</p>
+<div class="CTA" style="display:flex; width:210px;">
+  <button type="submit">
+    <a class="topnavtxt" href="#popup1" style="text-decoration: none; padding:9px;">MAKE AN APPOINTMENT</a>
+  </button>
+</div>
+      </div>
+    </div>
+    Main
+  </main>
+
+  <footer>
+    footer
+  </footer>
+
+  <!-- Popup Test -->
+  <div id="popup1" class="overlay">
+    <div class="popup" style="width: 650px">
+      <h2>Hello!</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content" >
+        <img src="Images/cssgif.gif">
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
