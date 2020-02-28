@@ -1,40 +1,61 @@
 /** ~~~~~~~~~~~~~~~~~~~~~~~PAGE~~~~~~~~~~~~~~~~~~~~~~~ **/
 body {
-  background-color: white;
+  background-color: #F5F5F5;
   margin: 0;
+}
+.format_text{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.15px;
+  text-decoration: none;
+}
+.little_buttons{
+  height:24px;
+}
+.boxshad{
+  box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.2), 0px 8px 16px rgba(38, 38, 38, 0.24);
+}
+.info_text{
+  font-size: 12px;
+  align-items: center;
+  color: white;
+  padding-left:5px;
+}
+
+.page_margin{
+  margin-left: 14%;
+  margin-right: 14%;
 }
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~ **/
 header{
   height:10rem;
 }
-
+header p{
+  margin-top:0;
+}
 .header {
-  /*height: 10rem;*/
   position: absolute;
   width: 76%;
   height: 128px;
   top: 26px;
-  margin: 0 14%;
 }
-
-.imghead{
-  height:max-content;
-  left: 16.67%;
-  right: 16.67%;
-  top: 16.67%;
-  bottom: 16.67%;
+.header_style{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  width:30%;
 }
-
-#logo{
+.header_logo{
   position: absolute;
   left: 0%;
   right: 82.94%;
   top: 0%;
   bottom: 67.97%;
 }
-
-#Utility{
+.utility{
   position: absolute;
   left: 40%;
   right: 0%;
@@ -43,8 +64,7 @@ header{
   display:flex;
   justify-content:space-between;
 }
-
-.CTA{
+.red_button{
   padding-right:20px;
   padding-left:20px;
   align-content: center;
@@ -52,155 +72,12 @@ header{
   border-radius: 5px;
   display:flex;
   justify-content: center;
-}
-
-.topnavtxt{
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 22px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.15px;
-  color: white
-}
-
-/** ~~~~~~~~~~~~~~~~~~~~~~~NAVBAR~~~~~~~~~~~~~~~~~~~~~~~ **/
-#topnav{
-  position: absolute;
-  display:flex;
-  left: 0%;
-  right: 0%;
-  top: 53%;
-  bottom: 0%;
-  background: #FFFFFF;
-  border-radius: 10px;
-  justify-content:space-between;
-}
-
-.navtext{
-  text-align-last: justify;
-  width: 50%;
-  margin: auto 0 auto 0;
-}
-
-.navicon{
-  width:10%;
-  display:flex;
-  justify-content: space-around;
-  margin: auto 1% auto 0;
-}
-
-nav a, nav button {
-  text-decoration: none;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 22px;
-  color:black;
-  letter-spacing: 0.15px;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: black;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: grey;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/** ~~~~~~~~~~~~~~~~~~~~~~~MAIN~~~~~~~~~~~~~~~~~~~~~~~ **/
-/*main {
-  height: calc(100vh - 20rem);
-}*/
-
-.maintitle{
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-}
-
-.mainh1{
-  font-family: Roboto;
-font-style: normal;
-font-weight: 900;
-font-size: 36px;
-line-height: 42px;
-}
-
-.maintxt{
-  font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0.15px;
-}
-
-.mainh2{
-  font-family: Roboto;
-font-style: normal;
-font-weight: 900;
-font-size: 19px;
-line-height: 26px;
-color: #F2726F;
-}
-
-button{
-  background:transparent; 
-  border:none; 
-  z-index:2;
+  width:210px;
+  height: 50px;
 }
 
 /** ~~~~~~~~~~~~IMAGE~~~~~~~~~~~~ **/
-#image{
+.blue_header_picture{
   position:absolute;
   top: 0;
   z-index:-2;
@@ -211,22 +88,138 @@ button{
   width:100%;
 }
 
+/** ~~~~~~~~~~~~NAVBAR~~~~~~~~~~~~ **/
+.navbar{
+  position: absolute;
+  display:flex;
+  left: 0%;
+  right: 0%;
+  top: 53%;
+  bottom: 0%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  justify-content:space-between;
+}
+.navbar_sections{
+  text-align-last: justify;
+  width: 50%;
+  margin: auto 0 auto 0;
+}
+.navbar_ul{
+  display:flex; 
+  justify-content: space-between;
+  align-items:baseline;
+}
+.vertical_align{
+  vertical-align: middle;
+}
+.navbar_right_icons{
+  width:10%;
+  display:flex;
+  justify-content: space-around;
+  margin: auto 1% auto 0;
+}
+.navbar_title{
+  font-size: 14px;
+  line-height: 22px;
+  color:black;
+}
+
+/** ~~~~~~DROPDOWN~~~~~~ **/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/** ~~~~~~~~~~~~~~~~~~~~~~~MAIN~~~~~~~~~~~~~~~~~~~~~~~ **/
+/*main {
+  height: calc(100vh - 20rem);
+}*/
+.main_text{
+  font-family: Roboto;
+  font-style: normal;
+  line-height: 24px;
+}
+.text_color{
+  color:white;
+}
+.text_alternate_color{
+  color:#5D62B5;
+}
+.title_size{
+  width:60%;
+}
+.main_section_name{
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+.main_section_title{
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px!important;
+}
+.main_section_text{
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+}
+.main_subtitle{
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 24px;
+  color: #F2726F;
+}
+button{
+  background:transparent; 
+  border:none; 
+  z-index:2;
+  text-transform: uppercase;
+}
+
 /** ~~~~~~~~~~~~JUMBOTRON~~~~~~~~~~~~ **/
-#jumbotron{
+.jumbotron{
   margin: 7rem 14%;
   height:21rem;
+  width:40%
 }
-
-#jumbotron .CTA{
-  width:210px;
-  height: 50px;
-}
-
-.boxshad{
-  box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.2), 0px 8px 16px rgba(38, 38, 38, 0.24);
-}
-
-.jumbtxt{
+.jumbotron_text{
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
@@ -236,62 +229,59 @@ button{
 }
 
 /** ~~~~~~~~~~~~ABOUT~~~~~~~~~~~~ **/
-#about{
+.about{
   position:relative;
-  margin: 0 14%;
-  padding: 90px 85px 0 85px;
+  padding: 90px 85px 350px 85px;
   background-color: #5D62B5;
   border-radius: 40px;
   display:flex;
   flex-direction: column;
+  background-image: url("Images/Blob2.png");
+  background-repeat:no-repeat;
+  background-position:bottom;
+  background-position-x: 50px;
+  background-position-y: 400px;
 }
-
-#circles{
+.circles{
   position:absolute;
   top: -105px;
   right: -75px;
 }
-
 .abouttxt{
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   line-height: 24px;  
 }
-
-#blob{
-  transform: translate(-8%,-1%);
-  width: 55%;
-  max-height: 300px;
-}
-
-#doggy1{
+.doggy1{
   position: absolute;
   margin: auto;
   display: flex;
   top: 95%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -55%);
 }
 
-/** ~~~~~~~~~~~~VALPROP~~~~~~~~~~~~ **/
-#ValProp{
+/** ~~~~~~~~~~~~PROMISES~~~~~~~~~~~~ **/
+.three_cards{
+  display:flex; 
+  justify-content: space-between;
+}
+.div_three_parts{
   margin: 18rem 14% 0 14%;
 }
-
-.divVp{
+.single_part{
   display:flex;
   width:30%
 }
-
-.imgVp{
+.parts_picture{
   height:65px;
   margin-right:20px;
   margin-top:19px;
 }
 
 /** ~~~~~~~~~~~~VIDEO~~~~~~~~~~~~ **/
-#Video{
+.second_doggy_ban{
   display: flex;
   margin: 7rem 0;
   height: 500px;
@@ -301,11 +291,79 @@ button{
   background-position-x: center;
   background-image: url("Images/doggy2.png");
 }
-
-#VidTxt{
+.text_ban{
   width: 30%;
   margin-top: 6%;
   margin-left: 55%;
+}
+.wblob{
+  z-index:-2;
+  position: absolute;
+  right:0;
+
+}
+
+/** ~~~~~~~~~~~~SERVICES~~~~~~~~~~~~ **/
+.services{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top:3rem;
+  margin-bottom:4rem;
+}
+.service_card{
+  width:325px;
+  height:340px;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius:20px;
+  background-color:white;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.service_card:hover{
+  box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.2), 0px 8px 16px rgba(38, 38, 38, 0.24);
+}
+.service_picture{
+  width:63px;
+}
+.service_title{
+  margin: 24px auto;
+}
+.margin_picture{
+  margin: 0 auto;
+}
+.service_text{
+  width:210px;
+}
+.service_button{
+  width:124px;
+  margin:auto;
+}
+
+/** ~~~~~~~~~~~~SECOND BANNER~~~~~~~~~~~~ **/
+.second_banner{
+  margin-top:8rem;
+  height:1417px;
+  z-index:-5px;
+  background-position-x: right;
+  background-image: url("Images/doggy3.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.form_base{
+  width: 585px;
+  height: 640px;
+  background: #5D62B5;
+  border-radius: 40px;
+  position:relative;
+}
+.form_input{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
 }
 /** ~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~ **/
 footer {
@@ -329,7 +387,6 @@ footer {
   visibility: visible;
   opacity: 1;
 }
-
 .popup {
   margin: 70px auto;
   padding: 20px;
@@ -339,7 +396,6 @@ footer {
   position: relative;
   transition: all ease-in-out;
 }
-
 .popup h2 {
   margin-top: 0;
   color: #333;
