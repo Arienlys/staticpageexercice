@@ -358,18 +358,25 @@ button{
 }
 .service_button{
   width:124px;
-  margin:auto;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 5rem;
 }
 
 /** ~~~~~~~~~~~~SECOND BANNER~~~~~~~~~~~~ **/
 .second_banner{
-  margin-top:8rem;
+  position:absolute;
   height:980px;
+  width:100%;
   background-position:bottom;
   background-position-x: right;
   background-image: url("Images/doggy3.png");
   background-repeat: no-repeat;
   background-size:cover;
+  z-index:-1;
+}
+
+.form_on_banner{
   justify-content: flex-end;
 }
 .form_base{
@@ -448,18 +455,18 @@ button{
 }
 .form_blob{
   position: absolute;
-  top: -1rem;
-  left: -12.5rem;
-  width: 150%;
-  height: 95%;
+  top: 7.5rem;
+  left: -10.5rem;
+  width: 750px;
+  height: 725px;
   z-index: 3;
 }
 .form_circles{
   height: 566px;
   width: 335px;
   position: absolute;
-  left: -6.6rem;
-  bottom: 11rem;
+  left: -5.6rem;
+  bottom: -2rem;
 }
 .stat_title{
   font-size: 30px;
@@ -489,6 +496,9 @@ text-align: center;
 }
 
 /** ~~~~~~~~~~~~GALLERY & STREAM~~~~~~~~~~~~ **/
+.gallery_margin{
+  margin-top:10rem;
+}
 /** ~~~~~~TABS~~~~~~ **/
 .tabs {
 	display: flex;
