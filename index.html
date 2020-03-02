@@ -93,8 +93,8 @@
       </div>
     </div>
 
-    <!-- purple box -->
-    <div class="about page_margin">
+    <!-- about -->
+    <div class="about purple_box page_margin">
       <img class="circles" src="Images/Circles.png">
       <p class="main_text main_section_name text_color">&#11048; Who we are</p>
       <p class="main_text main_section_title text_color title_size">Nemo enim ipsam voluptatem quia voluptas in proident
@@ -105,7 +105,7 @@
         qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
 
       <!-- Two pictures at the bottom -->
-      <img class="doggy1" src="Images/doggy1.png">
+      <img class="doggy doggy1" src="Images/doggy1.png">
     </div>
 
     <!-- Valprop -->
@@ -166,42 +166,42 @@
 
     <!-- Cards part -->
     <div class="services page_margin">
-      <div class="service_card">
+      <div class="card service_card">
         <img class="service_picture margin_picture" src="Images/bed.png">
         <p class="main_subtitle service_title">Pet Boarding (No Cages)</p>
         <p class="main_text service_text margin_picture">At vero eos et accusamus et iusto odio dignissimos ducimus qui
           blanditiis praesentium corrupti quos dolores et quas.</p>
       </div>
 
-      <div class="service_card">
+      <div class="card service_card">
         <img class="service_picture margin_picture" src="Images/wdog.png">
         <p class="main_subtitle service_title">Pet Daycare</p>
         <p class="main_text service_text margin_picture">At vero eos et accusamus et iusto odio dignissimos ducimus qui
           blanditiis praesentium corrupti quos dolores et quas.</p>
       </div>
 
-      <div class="service_card">
+      <div class="card service_card">
         <img class="service_picture margin_picture" src="Images/bath.png">
         <p class="main_subtitle service_title">Pet Day Spa & Grooming</p>
         <p class="main_text service_text margin_picture">At vero eos et accusamus et iusto odio dignissimos ducimus qui
           blanditiis praesentium corrupti quos dolores et quas.</p>
       </div>
 
-      <div class="service_card">
+      <div class="card service_card">
         <img class="service_picture margin_picture" src="Images/food.png">
         <p class="main_subtitle service_title">Custom Meal Plans</p>
         <p class="main_text service_text margin_picture">At vero eos et accusamus et iusto odio dignissimos ducimus qui
           blanditiis praesentium corrupti quos dolores et quas.</p>
       </div>
 
-      <div class="service_card">
+      <div class="card service_card">
         <img class="service_picture margin_picture" src="Images/trophy.png">
         <p class="main_subtitle service_title">Pet Training</p>
         <p class="main_text service_text margin_picture">At vero eos et accusamus et iusto odio dignissimos ducimus qui
           blanditiis praesentium corrupti quos dolores et quas.</p>
       </div>
 
-      <div class="service_card">
+      <div class="card service_card">
         <img class="service_picture margin_picture" src="Images/collar.png">
         <p class="main_subtitle service_title">Shop Our Store!</p>
         <p class="main_text service_text margin_picture">At vero eos et accusamus et iusto odio dignissimos ducimus qui
@@ -217,30 +217,100 @@
     </div>
 
     <!-- Second banner -->
-    <div class="second_banner">
-      <!--<div class="form_base">
-        <p class="main_text main_section_title text_color">Make an appointment</p>
-        <div class="form_input">
-          <input>
-          <input>
-          <input>
-          <input>
-          <input>
+    <div class="second_banner form_input">
+      <div class="relative">
+        <div class="form_base form_input">
+          <p class="main_text main_section_title text_color">Make an appointment</p>
+          <form>
+            <div class="form_input form_justify">
+              <input class="input" type="text" id="name" placeholder="name" required>
+              <input class="input" type="email" id="email" placeholder="E-mail" required>
+              <input class="input" type="text" id="phone" placeholder="Phone Number" required>
+              <div class="input format_text">
+                <select class="select format_text">
+                  <option class="option" value="0">Select Service</option>
+                  <option class="option" value="1">Pet Boarding</option>
+                  <option class="option" value="2">Pet Daycare</option>
+                  <option class="option" value="3">Day Spa & Grooming</option>
+                  <option class="option" value="4">Custom Meal Plans</option>
+                  <option class="option" value="5">Pet Training</option>
+                  <option class="option" value="6">Shop</option>
+                </select>
+              </div>
+              <textarea class="input input_text_area" id="message" rows="10"
+                placeholder="Tell us about your puppers include his/her name"></textarea>
+            </div>
+            <div class="red_button button_form">
+              <button type="submit">
+                <a class="info_text format_text" href="#popup1">Make an appointment</a>
+              </button>
+            </div>
+          </form>
         </div>
-        <div class="red_button">
-          <button type="submit">
-            <a class="info_text format_text" href="#popup1">Make an appointment</a>
-          </button>
-        </div>
-        <img>
-        <img>
+        <img class="form_blob" src="Images/Blob.png">
+        <img class="form_circles" src="Images/scircles.png">
       </div>
-      <div>
-        <p></p>
-        <p></p>
-        <p></p>
-      </div>-->
+      <div class="form_left_title">
+        <p class="stat_text stat_title text_color">Maxime placeat facere possimus omnis</p>
+        <p class="stat_text stat_number text_color">5,700+</p>
+        <p class="stat_text stat_customer text_color">customers served</p>
+      </div>
+      <img src="Images/wblob2.png" class="wblob2" />
     </div>
+
+    <!-- Gallery & Live streams -->
+    <div class="purple_box page_margin">
+      <p class="main_text main_section_name text_color">&#11048; Gallery & Live streams</p>
+      <p class="main_text main_section_title text_color title_size">Check out our hard workers</p>
+
+      <div class="tabs">
+        <input type="radio" name="tabs" id="tabone" checked="checked">
+        <label for="tabone" class="format_text text_color">Gallery</label>
+        <div class="tab">
+          <p class="text_color">didn't managed to create a slideshow ;_;</p>
+        </div>
+
+        <input type="radio" name="tabs" id="tabtwo">
+        <label for="tabtwo" class="format_text text_color"> Live stream: Yard 1</label>
+        <div class="tab">
+          <img class="doggy doggy2" src="Images/doggy4.png">
+        </div>
+
+        <input type="radio" name="tabs" id="tabthree">
+        <label for="tabthree" class="format_text text_color"> Live stream: Yard 2</label>
+        <div class="tab">
+          <img class="doggy doggy2" src="Images/slide1.png">
+        </div>
+
+        <input type="radio" name="tabs" id="tabfour">
+        <label for="tabfour" class="format_text text_color"> Live stream: Yard 3</label>
+        <div class="tab">
+          <img class="doggy doggy2" src="Images/slide2.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- customers -->
+    <div class="div_three_parts customer_div">
+      <div class="customer_title">
+        <p class="main_text main_section_name text_alternate_color">&#11048; Our customers</p>
+        <p class="main_text main_section_title">Illum qui dolorem eum quo voluptas ut distinctio</p>
+      </div>
+      <div class="card customer_card">
+        <p class="main_text main_section_text customer_justify">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua. 
+          Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore.”</p>
+        <img class="customer_picture" src="Images/cullen.png">
+        <p class="main_text main_section_text text_red">Cullen Bohannon</p>
+      </div>
+      <div class="card customer_card">
+        <p class="main_text main_section_text customer_justify">“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi ipsam voluptatem aspernatur.”</p>
+        <img class="customer_picture" src="Images/jennifer.png">
+        <p class="main_text main_section_text text_red">Jennifer Thomas</p>
+      </div>
+    </div>
+
     Main
   </main>
 
@@ -249,7 +319,7 @@
   </footer>
 
   <!-- Popup Test -->
-  <div id="popup1" class="overlay">
+  <div id="popup1" class="overlay" style="z-index:99">
     <div class="popup" style="width: 650px">
       <h2>Hello!</h2>
       <a class="close" href="#">&times;</a>

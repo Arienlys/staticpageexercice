@@ -28,6 +28,44 @@ body {
   margin-right: 14%;
 }
 
+.purple_box{
+  position:relative;
+  padding: 90px 85px 350px 85px;
+  background-color: #5D62B5;
+  border-radius: 40px;
+  display:flex;
+  flex-direction: column;
+  background-repeat:no-repeat;
+  background-position:bottom;
+  background-position-x: 50px;
+  background-position-y: 400px;
+}
+
+.doggy{
+  position: absolute;
+  margin: auto;
+  display: flex;
+  border-radius: 40px;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.2), 0px 8px 16px rgba(38, 38, 38, 0.24);
+}
+
+.card{
+  width:325px;
+  height:340px;
+  display:flex;
+  border-radius:20px;
+  background-color:white;
+  text-align: center;
+  justify-content: center;
+  box-sizing:border-box;
+}
+
+.card:hover{
+  box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.2), 0px 8px 16px rgba(38, 38, 38, 0.24);
+}
+
 /** ~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~ **/
 header{
   height:10rem;
@@ -124,6 +162,9 @@ header p{
   line-height: 22px;
   color:black;
 }
+nav button{
+  text-transform:none;
+}
 
 /** ~~~~~~DROPDOWN~~~~~~ **/
 .dropdown {
@@ -181,6 +222,9 @@ header p{
 .text_alternate_color{
   color:#5D62B5;
 }
+.text_red{
+  color:#F2726F;
+}
 .title_size{
   width:60%;
 }
@@ -230,17 +274,7 @@ button{
 
 /** ~~~~~~~~~~~~ABOUT~~~~~~~~~~~~ **/
 .about{
-  position:relative;
-  padding: 90px 85px 350px 85px;
-  background-color: #5D62B5;
-  border-radius: 40px;
-  display:flex;
-  flex-direction: column;
   background-image: url("Images/Blob2.png");
-  background-repeat:no-repeat;
-  background-position:bottom;
-  background-position-x: 50px;
-  background-position-y: 400px;
 }
 .circles{
   position:absolute;
@@ -254,12 +288,7 @@ button{
   line-height: 24px;  
 }
 .doggy1{
-  position: absolute;
-  margin: auto;
-  display: flex;
   top: 95%;
-  left: 50%;
-  transform: translate(-50%, -55%);
 }
 
 /** ~~~~~~~~~~~~PROMISES~~~~~~~~~~~~ **/
@@ -312,19 +341,8 @@ button{
   margin-bottom:4rem;
 }
 .service_card{
-  width:325px;
-  height:340px;
-  display:flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  border-radius:20px;
-  background-color:white;
-  text-align: center;
-  justify-content: center;
   margin-bottom: 25px;
-}
-.service_card:hover{
-  box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.2), 0px 8px 16px rgba(38, 38, 38, 0.24);
+  flex-direction: column;
 }
 .service_picture{
   width:63px;
@@ -346,25 +364,204 @@ button{
 /** ~~~~~~~~~~~~SECOND BANNER~~~~~~~~~~~~ **/
 .second_banner{
   margin-top:8rem;
-  height:1417px;
-  z-index:-5px;
+  height:980px;
+  background-position:bottom;
   background-position-x: right;
   background-image: url("Images/doggy3.png");
   background-repeat: no-repeat;
   background-size:cover;
+  justify-content: flex-end;
 }
 .form_base{
-  width: 585px;
-  height: 640px;
+  margin-top:7rem;
+  min-width: 470px;
+  max-width: 585px;
+  max-height: 640px;
   background: #5D62B5;
   border-radius: 40px;
-  position:relative;
+  text-align: center;
+  box-sizing: border-box;
+  padding:55px;
+  z-index:5;
 }
 .form_input{
   display:flex;
   flex-direction: row;
   flex-wrap:wrap;
 }
+.form_justify{
+  justify-content: space-between;
+}
+.form_left_title{
+  width:40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  box-sizing: border-box;
+  padding: 50px;
+}
+.input{
+ width:220px;
+ height:45px;
+ background:transparent;
+ border: 2px solid white;
+ border-radius:10px; 
+ margin-bottom: 22px;
+}
+.select{
+  width:100%;
+  height:100%;
+  padding: 0 15px;
+  background:transparent;
+  border:none;
+  color:white;
+  font-weight:normal!important;
+  font-size:12pt;
+ }
+.option{
+  background:#5D62B5;
+  border:none;
+  line-height: 24px;
+}
+.input::placeholder{
+  color:white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  padding:20px;
+}
+.input_text_area{
+  width:470px;
+  height:180px;
+}
+.button_form{
+  width:auto;
+  margin-left:55%;
+}
+.relative{
+  position:relative;
+  display:flex;
+}
+.form_blob{
+  position: absolute;
+  top: -1rem;
+  left: -12.5rem;
+  width: 150%;
+  height: 95%;
+  z-index: 3;
+}
+.form_circles{
+  height: 566px;
+  width: 335px;
+  position: absolute;
+  left: -6.6rem;
+  bottom: 11rem;
+}
+.stat_title{
+  font-size: 30px;
+  line-height: 36px;
+}
+.stat_number{
+  font-size: 96px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+}
+.stat_customer{
+  font-size: 19px;
+line-height: 26px;
+}
+.stat_text{
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+text-align: center;
+}
+.wblob2{
+  z-index:-2;
+  position: absolute;
+  left:0;
+  margin-top:60%;
+}
+
+/** ~~~~~~~~~~~~GALLERY & STREAM~~~~~~~~~~~~ **/
+/** ~~~~~~TABS~~~~~~ **/
+.tabs {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tabs label {
+	order: 1; 
+	display: block;
+	padding: 1rem 2rem;
+	cursor: pointer;
+  background: none;
+  border-bottom: 1px solid grey;
+  font-weight: normal;
+  transition: ease 0.2s;
+}
+.tabs .tab {
+  order: 99; 
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: none;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	border-bottom: 4px solid white;
+}
+.tabs input[type="radio"]:hover + label {
+	border-bottom: 4px solid white;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+/** ~~~~~~PICTURES~~~~~~ **/
+.doggy2{
+  top:88%;
+  border-radius:40px;
+}
+
+/** ~~~~~~~~~~~~CUSTOMERS~~~~~~~~~~~~ **/
+.customer_div{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.customer_title{
+  width:30%;
+}
+
+.customer_card{
+  flex-wrap: wrap;
+  padding:30px;
+  justify-content: flex-start;
+}
+
+.customer_picture{
+  width:45px;
+  height:45px;
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
+.customer_justify{
+  text-align:justify;
+}
+
 /** ~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~ **/
 footer {
   height: 10rem;
