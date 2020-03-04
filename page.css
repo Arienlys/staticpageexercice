@@ -1,0 +1,73 @@
+/** ~~~~~~~~~~~~~~~~~~~~~~~PAGE~~~~~~~~~~~~~~~~~~~~~~~ **/
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.15px;
+    text-decoration: none;
+  }
+  
+  .little_buttons {
+    height: 1.5rem;
+  }
+  
+  .boxshad {
+    box-shadow: 0rem 1rem 1.5rem rgba(38, 38, 38, 0.2), 0rem 0.5rem 1rem rgba(38, 38, 38, 0.24);
+  }
+  
+  .info_text {
+    font-size: 12px;
+    align-items: center;
+    color: white;
+    padding-left: 0.5rem;
+  }
+  
+  .page_margin {
+    margin-left: 14%;
+    margin-right: 14%;
+  }
+  
+  .purple_box {
+    position: relative;
+    padding: 6rem 5rem 22rem 5rem;
+    background-color: #5D62B5;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: 3rem;
+    background-position-y: 25rem;
+  }
+  
+  .doggy {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    border-radius: 2.5rem;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    box-shadow: 0rem 1rem 1.5rem rgba(38, 38, 38, 0.2), 0rem 0.5rem 1rem rgba(38, 38, 38, 0.24);
+  }
+  
+  .card {
+    width: 20rem;
+    height: 21rem;
+    display: flex;
+    border-radius: 1.5rem;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  .card:hover {
+    box-shadow: 0rem 1rem 1.5rem rgba(38, 38, 38, 0.2), 0rem 0.5rem 1rem rgba(38, 38, 38, 0.24);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  

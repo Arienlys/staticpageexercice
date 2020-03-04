@@ -1,0 +1,159 @@
+/** ~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~ **/
+header {
+  height: 10rem;
+}
+
+header p {
+  margin-top: 0;
+}
+
+.header {
+  position: absolute;
+  width: 76%;
+  height: 8rem;
+  top: 1.5rem;
+}
+
+.header_style {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 30%;
+}
+
+.header_logo {
+  position: absolute;
+  left: 0%;
+  right: 82.94%;
+  top: 0%;
+  bottom: 67.97%;
+}
+
+.utility {
+  position: absolute;
+  left: 40%;
+  right: 0%;
+  top: 0%;
+  bottom: 68.75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.red_button {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  align-content: center;
+  background-color: #F2726F;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  width: 13rem;
+  height: 3rem;
+}
+
+/** ~~~~~~~~~~~~IMAGE~~~~~~~~~~~~ **/
+.blue_header_picture {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  background-image: url("Images/headerback.png");
+  background-position-x: center;
+  background-size: cover;
+  height: 50rem;
+  width: 100%;
+}
+
+/** ~~~~~~~~~~~~NAVBAR~~~~~~~~~~~~ **/
+.navbar {
+  position: absolute;
+  display: flex;
+  left: 0%;
+  right: 0%;
+  top: 53%;
+  bottom: 0%;
+  background: #FFFFFF;
+  border-radius: 1.5rem;
+  justify-content: space-between;
+}
+
+.navbar_sections {
+  text-align-last: justify;
+  width: 50%;
+  margin: auto 0;
+}
+
+.navbar_ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.vertical_align {
+  vertical-align: middle;
+}
+
+.navbar_right_icons {
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto 1% auto 0;
+}
+
+.navbar_title {
+  font-size: 14px;
+  line-height: 1.5rem;
+  color: black;
+}
+
+nav button {
+  text-transform: none;
+}
+
+/** ~~~~~~DROPDOWN~~~~~~ **/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 1rem;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 10rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

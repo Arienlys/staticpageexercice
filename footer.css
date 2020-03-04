@@ -1,0 +1,17 @@
+/** ~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~ **/
+footer {
+    height: 10rem;
+    /*display:flex;*/
+}
+
+.footer_white {
+    width: 100%;
+    height: 28rem;
+    background-color: white;
+}
+
+.footer_purple {
+    width: 100%;
+    height: 4rem;
+    background-color: #5D62B5;
+}

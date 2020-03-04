@@ -1,0 +1,476 @@
+/** ~~~~~~~~~~~~~~~~~~~~~~~MAIN~~~~~~~~~~~~~~~~~~~~~~~ **/
+/*main {
+  height: calc(100vh - 20rem);
+}*/
+.main_text {
+    font-family: Roboto;
+    font-style: normal;
+    line-height: 1.5rem;
+}
+
+.text_color {
+    color: white;
+}
+
+.text_alternate_color {
+    color: #5D62B5;
+}
+
+.text_red {
+    color: #F2726F;
+}
+
+.title_size {
+    width: 60%;
+}
+
+.main_section_name {
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.main_section_title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 2.5rem;
+}
+
+.main_section_text {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.15px;
+}
+
+.main_subtitle {
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 1.3rem;
+    color: #F2726F;
+}
+
+button {
+    background: transparent;
+    border: none;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+/** ~~~~~~~~~~~~JUMBOTRON~~~~~~~~~~~~ **/
+.jumbotron {
+    margin: 7rem 14%;
+    height: 21rem;
+    width: 40rem;
+}
+
+.jumbotron_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+/** ~~~~~~~~~~~~ABOUT~~~~~~~~~~~~ **/
+.about {
+    background-image: url("Images/Blob2.png");
+}
+
+.circles {
+    position: absolute;
+    top: -6.5rem;
+    right: -4.5rem;
+}
+
+.abouttxt {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5rem;
+}
+
+.doggy1 {
+    top: 95%;
+}
+
+/** ~~~~~~~~~~~~PROMISES~~~~~~~~~~~~ **/
+.three_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_three_parts {
+    margin: 18rem 14% 0 14%;
+}
+
+.single_part {
+    display: flex;
+    width: 30%
+}
+
+.parts_picture {
+    height: 4rem;
+    margin-right: 1.4rem;
+    margin-top: 1rem;
+}
+
+/** ~~~~~~~~~~~~VIDEO~~~~~~~~~~~~ **/
+.second_doggy_ban {
+    display: flex;
+    margin: 7rem 0;
+    height: 31.25rem;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-image: url("Images/doggy2.png");
+}
+
+.text_ban {
+    width: 25rem;
+    margin-top: 6%;
+    margin-left: 55%;
+}
+
+.wblob {
+    z-index: -2;
+    position: absolute;
+    right: 0;
+
+}
+
+/** ~~~~~~~~~~~~SERVICES~~~~~~~~~~~~ **/
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.service_card {
+    margin-bottom: 1.5rem;
+    flex-direction: column;
+}
+
+.service_picture {
+    width: 3.5rem;
+}
+
+.service_title {
+    margin: 1.5rem auto;
+}
+
+.margin_picture {
+    margin: 0 auto;
+}
+
+.service_text {
+    width: 13rem;
+}
+
+.service_button {
+    width: 7.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+}
+
+/** ~~~~~~~~~~~~SECOND BANNER~~~~~~~~~~~~ **/
+.second_banner {
+    position: absolute;
+    height: 980px;
+    width: 100%;
+    background-position: bottom;
+    background-position-x: right;
+    background-image: url("Images/doggy3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.form_on_banner {
+    justify-content: flex-end;
+}
+
+.form_base {
+    margin-top: 7rem;
+    min-width: 29rem;
+    max-width: 36.5rem;
+    max-height: 40rem;
+    background: #5D62B5;
+    border-radius: 2.5rem;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 3.4rem;
+    z-index: 5;
+}
+
+.form_input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form_justify {
+    justify-content: space-between;
+}
+
+.form_left_title {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    box-sizing: border-box;
+    padding: 3.1rem;
+}
+
+.input {
+    width: 13.75rem;
+    height: 3rem;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.select {
+    padding: 0 1.3rem;
+    color: white;
+    width: 14rem;
+    height: 3.38rem;
+}
+
+.label{
+    display:none;
+}
+
+.option {
+    background: #5D62B5;
+    border: none;
+    line-height: 1.5rem;
+}
+
+.input::placeholder {
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5rem;
+    letter-spacing: 0.15px;
+    padding: 1.4rem;
+}
+
+.input_text_area {
+    width: 29rem;
+    height: 11.25rem;
+}
+
+.button_form {
+    width: auto;
+    margin-left: 55%;
+}
+
+.relative {
+    position: relative;
+    display: flex;
+}
+
+.form_blob {
+    position: absolute;
+    top: 7.5rem;
+    left: -10.5rem;
+    width: 750px;
+    height: 725px;
+    z-index: 3;
+}
+
+.form_circles {
+    position: absolute;
+    left: -5.6rem;
+    bottom: -2rem;
+}
+
+.stat_title {
+    font-size: 2rem;
+    line-height: 2.25rem;
+}
+
+.stat_number {
+    font-size: 96px;
+    line-height: 0.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.stat_customer {
+    font-size: 19px;
+    line-height: 1.4rem;
+}
+
+.stat_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    text-align: center;
+}
+
+.wblob2 {
+    z-index: -2;
+    position: absolute;
+    left: 0;
+    margin-top: 55%;
+}
+
+/** ~~~~~~~~~~~~GALLERY & STREAM~~~~~~~~~~~~ **/
+.gallery_margin {
+    margin-top: 10rem;
+}
+
+/** ~~~~~~TABS~~~~~~ **/
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tabs label {
+    order: 1;
+    display: block;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background: none;
+    border-bottom: 1px solid grey;
+    font-weight: normal;
+    transition: ease 0.2s;
+}
+
+.tabs .tab {
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: none;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs input[type="radio"]:checked+label {
+    border-bottom: 4px solid white;
+}
+
+.tabs input[type="radio"]:hover+label {
+    border-bottom: 4px solid white;
+}
+
+.tabs input[type="radio"]:checked+label+.tab {
+    display: block;
+}
+
+/** ~~~~~~PICTURES~~~~~~ **/
+.doggy2 {
+    top: 88%;
+    border-radius: 2.5rem;
+}
+
+/** ~~~~~~~~~~~~CUSTOMERS~~~~~~~~~~~~ **/
+.customer_div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15rem 14% 6rem 14%;
+}
+
+.customer_title {
+    width: 30%;
+}
+
+.customer_card {
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: flex-start;
+}
+
+.customer_picture {
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-top: 0.3rem;
+    margin-right: 1rem;
+}
+
+.customer_justify {
+    text-align: justify;
+}
+
+/** ~~~~~~~~~~~~STATS~~~~~~~~~~~~ **/
+.stats{
+    background-color: #29C3BE;
+    width:100%;
+    height:38rem;
+}
+
+.impact{
+    position: relative;
+}
+/** ~~~~~~~~~~~~~~~~~~~~~~~POPUP~~~~~~~~~~~~~~~~~~~~~~~ **/
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 10ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 4.5rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 0.3rem;
+    width: 30%;
+    position: relative;
+    transition: all ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 0.3rem;
+    right: 1rem;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
