@@ -544,7 +544,7 @@ button {
 
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~@MEDIA~~~~~~~~~~~~~~~~~~~~~~~ **/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
     /** ~~~~~~~~~~~Jumbotron~~~~~~~~~~~ **/
     .jumbotron {
@@ -587,13 +587,13 @@ button {
     }
 
     /** ~~~~~~~~~~~Form~~~~~~~~~~~ **/
-    .form_blob, .form_circles, .wblob2, .green_blob{
+    .form_blob, .form_circles, .wblob2, .green_blob, .circles{
         display:none;
     }
 
     .form_base{
         margin-top:5rem;
-        width:30rem;
+        width:auto;
     }
 
     .form_input{
@@ -609,6 +609,11 @@ button {
     .form_left_title{
         width:unset;
         margin-top:0;
+    }
+
+    .form_left_title .stat_number{
+        margin-block-start: 3rem;
+        margin-block-end: 3rem;
     }
 
     .relative{
@@ -658,8 +663,22 @@ button {
         margin: 0 2rem 1rem 2rem;
     }
 
+    /** ~~~~~~~~~~~Stats~~~~~~~~~~~ **/
+    .stats_title{
+        width:unset;
+    }
+
     /** ~~~~~~~~~~~Purple Banner~~~~~~~~~~~ **/
     .purple_banner{
-        width:unset;
+        width:auto;
+        padding:1rem 1rem;
+    }
+
+    .purple_banner p{
+        margin-bottom:1rem;
+    }
+
+    .last_text{
+        width:100%;
     }
 }
