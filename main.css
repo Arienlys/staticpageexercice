@@ -76,6 +76,7 @@ button {
 /** ~~~~~~~~~~~~ABOUT~~~~~~~~~~~~ **/
 .about {
     background-image: url("Images/Blob2.png");
+
 }
 
 .circles {
@@ -198,9 +199,7 @@ button {
 
 .form_base {
     margin-top: 7rem;
-    min-width: 29rem;
-    max-width: 36.5rem;
-    max-height: 40rem;
+    width: 36.5rem;
     background: #5D62B5;
     border-radius: 2.5rem;
     text-align: center;
@@ -216,7 +215,7 @@ button {
 }
 
 .form_justify {
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .form_left_title {
@@ -283,7 +282,7 @@ button {
 
 .form_blob {
     position: absolute;
-    top: 7.5rem;
+    top: 10rem;
     left: -10.5rem;
     width: 750px;
     height: 725px;
@@ -490,7 +489,7 @@ button {
     margin: 0;
 }
 
-/** ~~~~~~~~~~~~~~~~~~~~~~~POPUP~~~~~~~~~~~~~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~~~~~~~~~~~~~POPUP~~~~~~~~~~~~~~~~~~~~~~~
 .overlay {
     position: fixed;
     top: 0;
@@ -541,7 +540,7 @@ button {
 .popup .content {
     max-height: 30%;
     overflow: auto;
-}
+} **/
 
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~@MEDIA~~~~~~~~~~~~~~~~~~~~~~~ **/
@@ -552,9 +551,78 @@ button {
         width: auto;
     }
 
+    /** ~~~~~~~~~~~About~~~~~~~~~~~ **/
+    .about{
+        background-image: none;
+    }
+
+    /** ~~~~~~~~~~~First Doggy picture~~~~~~~~~~~ **/
+    .doggy{
+        width:100%;
+    }
+
+    /** ~~~~~~~~~~~Second Banner~~~~~~~~~~~ **/
+    .second_doggy_ban{
+        text-align:right;
+        justify-content: flex-end;
+    }
+
+    .text_ban{
+        width:20rem;
+        margin: auto 0;
+    }
+    /** ~~~~~~~~~~~Services~~~~~~~~~~~ **/
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    /** ~~~~~~~~~~~Form~~~~~~~~~~~ **/
+    .second_banner{
+        height:90rem;
+    }
+
+    /** ~~~~~~~~~~~Form~~~~~~~~~~~ **/
+    .form_blob, .form_circles, .wblob2, .green_blob{
+        display:none;
+    }
+
+    .form_base{
+        margin-top:5rem;
+        width:30rem;
+    }
+
+    .form_input{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: unset;
+    }
+
+    .input, .select, .input_text_area{
+        width:100%;
+    }
+
+    .form_left_title{
+        width:unset;
+        margin-top:0;
+    }
+
+    .relative{
+        margin: 2rem auto 0 auto;
+    }
+
+    /** ~~~~~~~~~~~Promises~~~~~~~~~~~ **/
+    .gallery_margin{
+        margin-top: 5rem;
+    }
+
     /** ~~~~~~~~~~~Promises~~~~~~~~~~~ **/
     .div_three_parts {
-        margin: 18rem 0 0 0;
+        margin: 10rem 0 0 0;
     }
 
     .single_part {
@@ -563,11 +631,35 @@ button {
     }
 
     /** ~~~~~~~~~~~Customer~~~~~~~~~~~ **/
+    .customer_title{
+        width:100%;
+        text-align: center;
+    }
+
     .customer_div {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 15rem 0 10rem 0;
+        margin: 10rem 0 10rem 0;
+        align-items: center;
+    }
+
+    .customer_card{
+        margin-bottom:3rem;
+    }
+
+    /** ~~~~~~~~~~~Impact~~~~~~~~~~~ **/
+    .doggy5{
+        width:50%;
+    }
+
+    .stats_totals{
+        margin: 0 2rem 1rem 2rem;
+    }
+
+    /** ~~~~~~~~~~~Purple Banner~~~~~~~~~~~ **/
+    .purple_banner{
+        width:unset;
     }
 }

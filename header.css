@@ -24,10 +24,6 @@ header p {
 
 .header_logo {
   position: absolute;
-  left: 0%;
-  right: 82.94%;
-  top: 0%;
-  bottom: 67.97%;
 }
 
 .utility {
@@ -156,4 +152,30 @@ nav button {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/** ~~~~~~~~~~~~~~~~~~~~~~~@MEDIA~~~~~~~~~~~~~~~~~~~~~~~ **/
+@media screen and (max-width: 600px) {
+
+  /** ~~~~~~~~~~~Header~~~~~~~~~~~ **/
+  .header{
+    width: 100%;
+  }
+
+  .utility img{
+    display:none;
+  }
+
+  .header_style{
+    width:auto;
+  }
+
+  .utility .red_button{
+    width:3rem;
+  }
+
+  /** ~~~~~~~~~~~Navbar~~~~~~~~~~~ **/
+  .navbar_sections{
+    width:80%;
+  }
 }

@@ -76,4 +76,8 @@ body {
     .page_margin {
       margin:0;
     }
+
+    .purple_box{
+      padding: 6rem 5rem 15rem 5rem;
+    }
   }
