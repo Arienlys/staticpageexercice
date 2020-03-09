@@ -98,6 +98,7 @@ button {
 /** ~~~~~~~~~~~~PROMISES~~~~~~~~~~~~ **/
 .three_cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -244,8 +245,8 @@ button {
     height: 3.38rem;
 }
 
-.label{
-    display:none;
+.label {
+    display: none;
 }
 
 .option {
@@ -412,80 +413,81 @@ button {
 }
 
 /** ~~~~~~~~~~~~STATS~~~~~~~~~~~~ **/
-.stats{
+.stats {
     background-color: #29C3BE;
-    width:100%;
-    padding-bottom:13rem;
+    width: 100%;
+    padding-bottom: 13rem;
 }
 
-.impact{
+.impact {
     position: relative;
-    padding-top:6rem;
+    padding-top: 6rem;
 }
 
-.doggy5{
-    position:absolute;
-    z-index:1;
-    right:0;
-    top:-5rem;
+.doggy5 {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: -5rem;
 }
 
-.green_blob{
-    position:absolute;
-    right:-5.5rem;
-    top:0;
+.green_blob {
+    position: absolute;
+    right: -5.5rem;
+    top: 0;
 }
 
-.stats_icons{
-    width:4.75rem;
-    height:4.75rem;
+.stats_icons {
+    width: 4.75rem;
+    height: 4.75rem;
 }
 
-.stats_numbers{
-    display:flex;
+.stats_numbers {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 4rem;
 }
 
-.stats_title{
-    width:25rem;
+.stats_title {
+    width: 25rem;
 }
 
-.stats_totals{
+.stats_totals {
     height: 4.75rem;
-    width:11rem;
+    width: 11rem;
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
 }
 
-.stats_margin{
-    margin:0;
+.stats_margin {
+    margin: 0;
 }
 
 /** ~~~~~~~~~~~~LAST PURPLE BANNER~~~~~~~~~~~~ **/
-.purple_banner{
-    position:absolute;
-    display:flex;
+.purple_banner {
+    position: absolute;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color:#5D62B5;
+    background-color: #5D62B5;
     padding: 3rem 4rem;
-    border-radius:2.5rem;
-    bottom:-18rem;
+    border-radius: 2.5rem;
+    bottom: -18rem;
+    width:100%;
     justify-content: space-between;
 }
 
-.last_text{
-    font-weight:900;
-    font-size:24px;
+.last_text {
+    font-weight: 900;
+    font-size: 24px;
     line-height: 30px;
-    width:60%;
-    margin:0;
+    width: 60%;
+    margin: 0;
 }
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~POPUP~~~~~~~~~~~~~~~~~~~~~~~ **/
@@ -511,7 +513,6 @@ button {
     padding: 1.5rem;
     background: #fff;
     border-radius: 0.3rem;
-    width: 30%;
     position: relative;
     transition: all ease-in-out;
 }
@@ -540,4 +541,33 @@ button {
 .popup .content {
     max-height: 30%;
     overflow: auto;
+}
+
+
+/** ~~~~~~~~~~~~~~~~~~~~~~~@MEDIA~~~~~~~~~~~~~~~~~~~~~~~ **/
+@media screen and (max-width: 600px) {
+
+    /** ~~~~~~~~~~~Jumbotron~~~~~~~~~~~ **/
+    .jumbotron {
+        width: auto;
+    }
+
+    /** ~~~~~~~~~~~Promises~~~~~~~~~~~ **/
+    .div_three_parts {
+        margin: 18rem 0 0 0;
+    }
+
+    .single_part {
+        display: flex;
+        width: auto;
+    }
+
+    /** ~~~~~~~~~~~Customer~~~~~~~~~~~ **/
+    .customer_div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 15rem 0 10rem 0;
+    }
 }
