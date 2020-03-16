@@ -75,7 +75,7 @@ button {
 
 /** ~~~~~~~~~~~~ABOUT~~~~~~~~~~~~ **/
 .about {
-    background-image: url("./images/Blob2.png");
+    background-image: url("./Images/Blob2.png");
 
 }
 
@@ -127,7 +127,7 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-image: url("./images/doggy2.png");
+    background-image: url("./Images/doggy2.png");
 }
 
 .text_ban {
@@ -187,7 +187,7 @@ button {
     width: 100%;
     background-position: bottom;
     background-position-x: right;
-    background-image: url("./images/doggy3.png");
+    background-image: url("./Images/doggy3.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
@@ -544,6 +544,7 @@ button {
 
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~@MEDIA~~~~~~~~~~~~~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~~< 800PX~~~~~~~~~~~~ **/
 @media screen and (max-width: 800px) {
 
     /** ~~~~~~~~~~~Jumbotron~~~~~~~~~~~ **/
@@ -682,3 +683,23 @@ button {
         width:100%;
     }
 }
+
+@media screen and (max-width: 300px) {
+
+    .form_base{
+        padding:0;
+    }
+
+    .input{
+        width:auto;
+    }
+    
+    .red_button{
+        padding:0;
+    }
+
+    .card{
+        width:auto;
+    }
+
+  }

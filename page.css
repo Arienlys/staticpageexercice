@@ -72,6 +72,8 @@ body {
   }
   
   /** ~~~~~~~~~~~~~~~~~~~~~~~@MEDIA~~~~~~~~~~~~~~~~~~~~~~~ **/
+
+  
   @media screen and (max-width: 800px) {
     .page_margin {
       margin:0;

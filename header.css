@@ -53,7 +53,7 @@ header p {
   position: absolute;
   top: 0;
   z-index: -2;
-  background-image: url("./images/headerback.png");
+  background-image: url("./Images/headerback.png");
   background-position-x: center;
   background-size: cover;
   height: 50rem;
@@ -155,27 +155,45 @@ nav button {
 }
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~@MEDIA~~~~~~~~~~~~~~~~~~~~~~~ **/
+  /** ~~~~~~~~~~~800px~~~~~~~~~~~ **/
 @media screen and (max-width: 800px) {
 
   /** ~~~~~~~~~~~Header~~~~~~~~~~~ **/
-  .header{
+  .header {
     width: 100%;
   }
 
-  .utility img{
-    display:none;
+  .utility img {
+    display: none;
   }
 
-  .header_style{
-    width:auto;
+  .header_style {
+    width: auto;
   }
 
-  .utility .red_button{
-    display:none;
+  .utility .red_button {
+    display: none;
   }
 
   /** ~~~~~~~~~~~Navbar~~~~~~~~~~~ **/
-  .navbar_sections{
-    width:80%;
+  .navbar_sections {
+    width: 80%;
+  }
+}
+
+  /** ~~~~~~~~~~~300px~~~~~~~~~~~ **/
+@media screen and (max-width: 300px) {
+
+  /** ~~~~~~~~~~~Navbar~~~~~~~~~~~ **/
+  .navbar_right_icons {
+    width: auto;
+  }
+
+  .header_logo {
+    display: none;
+  }
+
+  .utility {
+    position: initial;
   }
 }
