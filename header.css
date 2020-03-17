@@ -40,7 +40,7 @@ header p {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   align-content: center;
-  background-color: #F2726F;
+  background-color: #f2726f;
   border-radius: 0.5rem;
   display: flex;
   justify-content: center;
@@ -68,9 +68,13 @@ header p {
   right: 0%;
   top: 53%;
   bottom: 0%;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 1.5rem;
   justify-content: space-between;
+}
+
+.red-navbar {
+  background-color: red;
 }
 
 .navbar_sections {
@@ -155,9 +159,8 @@ nav button {
 }
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~@MEDIA~~~~~~~~~~~~~~~~~~~~~~~ **/
-  /** ~~~~~~~~~~~800px~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~800px~~~~~~~~~~~ **/
 @media screen and (max-width: 800px) {
-
   /** ~~~~~~~~~~~Header~~~~~~~~~~~ **/
   .header {
     width: 100%;
@@ -181,9 +184,8 @@ nav button {
   }
 }
 
-  /** ~~~~~~~~~~~300px~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~300px~~~~~~~~~~~ **/
 @media screen and (max-width: 300px) {
-
   /** ~~~~~~~~~~~Navbar~~~~~~~~~~~ **/
   .navbar_right_icons {
     width: auto;
