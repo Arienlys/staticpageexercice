@@ -116,6 +116,10 @@ nav button {
   overflow: hidden;
 }
 
+.visibility{
+  display:none;
+}
+
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
@@ -133,7 +137,7 @@ nav button {
 }
 
 .dropdown-content {
-  display: none;
+  display:block;
   position: absolute;
   background-color: white;
   min-width: 10rem;
@@ -152,10 +156,6 @@ nav button {
 
 .dropdown-content a:hover {
   background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~@MEDIA~~~~~~~~~~~~~~~~~~~~~~~ **/

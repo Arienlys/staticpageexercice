@@ -2,11 +2,11 @@ const navbar = window.document.querySelector("nav.navbar");
 const headerLogo = window.document.querySelector(".header_logo");
 const jumboTron = window.document.querySelector(".jumbotron");
 
-// MODIFY THE CONTENT
+/** ~~~~~~~~~~~~~~~~~~~~~~~ MODIFYING THE CONTENT ~~~~~~~~~~~~~~~~~~~~~~~ **/
 const modifyJumboTronText = () => {
   const heading = document.createElement("h1");
   heading.innerHTML = "I am the new JUMBOTRON";
-  //  Thi is very powerfull because is 'nukes' everything inside
+  //  ThiS is very powerfull because is 'nukes' everything inside
   jumboTron.innerHTML = "";
   jumboTron.appendChild(heading);
 };
@@ -14,18 +14,34 @@ const modifyJumboTronText = () => {
 //  this is an arrow function to handle the click event on the headerLogo
 const headerEventClickHandler = event => {
   event.preventDefault();
-  // MODIFY CLASSES
+
+
+  /** ~~~~~~~~~~~~~~~~~~~~~~~ MODIFYING CLASSES ~~~~~~~~~~~~~~~~~~~~~~~ **/
   navbar.classList.toggle("red-navbar");
 
   //we can call a function like this
   modifyJumboTronText();
 };
 
-//  ADD EVENTS
+/** ~~~~~~~~~~~~~~~~~~~~~~~ ADDING EVENTS ~~~~~~~~~~~~~~~~~~~~~~~ **/
 headerLogo.addEventListener("click", headerEventClickHandler);
 
 // Exercise
+/* Use querySelector and click events and classList to re-implement the dropdowns */
+const buttonNavbar = window.document.querySelectorAll("nav .dropdown");
 
-/*
-Use querySelector and click events and classList to re-implement the dropdowns
-*/
+const openDropDown = event => {
+
+}
+
+for (const button of buttonNavbar) {
+  button.addEventListener("click", () => {
+    const dropDown = button.querySelector("div");
+    dropDown.classList.toggle("dropdown-content"); }
+    );
+}
+
+/* for (let i = 0; i < buttonNavbar.length; i++) {
+  buttonNavbar[i].addEventListener("click", openDropDown);
+}
+ */
