@@ -108,6 +108,7 @@ header p {
 
 nav button {
   text-transform: none;
+  font: inherit;
 }
 
 /** ~~~~~~DROPDOWN~~~~~~ **/

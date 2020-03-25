@@ -31,17 +31,11 @@ headerLogo.addEventListener("click", headerEventClickHandler);
 const buttonNavbar = window.document.querySelectorAll("nav .dropdown");
 
 const openDropDown = event => {
-
+  const div = event.target.closest("div");
+  const dropDown = div.querySelector("div");
+  dropDown.classList.toggle("dropdown-content");
 }
 
 for (const button of buttonNavbar) {
-  button.addEventListener("click", () => {
-    const dropDown = button.querySelector("div");
-    dropDown.classList.toggle("dropdown-content"); }
-    );
+  button.addEventListener("click", openDropDown);
 }
-
-/* for (let i = 0; i < buttonNavbar.length; i++) {
-  buttonNavbar[i].addEventListener("click", openDropDown);
-}
- */
