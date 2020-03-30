@@ -31,8 +31,8 @@ headerLogo.addEventListener("click", headerEventClickHandler);
 const buttonNavbar = window.document.querySelectorAll("nav .dropdown");
 
 const openDropDown = event => {
-  const div = event.target.closest("div");
-  const dropDown = div.querySelector("div");
+  const div = event.target.closest(".dropdown");
+  const dropDown = div.querySelector(".visibility");
   dropDown.classList.toggle("dropdown-content");
 }
 
