@@ -12,6 +12,11 @@
   </head>
 
   <body>
+    <div class="visibility" data-modal="about">
+      <div class="modal-inner">
+        My awesome popup
+      </div>
+    </div>
     <header>
       <div class="header page_margin">
         <a href="#"><img class="header_logo" src="./images\logo.png"/></a>
@@ -48,10 +53,7 @@
               <div class="dropdown">
                 <button class="navbar_title">
                   Services
-                  <img
-                    src="./images/expand.png"
-                    class="vertical_align"
-                  />
+                  <img src="./images/expand.png" class="vertical_align" />
                 </button>
                 <div class="visibility">
                   <a href="#" class="navbar_title">Nico </a>
@@ -76,7 +78,9 @@
                   <a href="#" class="navbar_title">awesome :v</a>
                 </div>
               </div>
-              <a href="#popup1" class="navbar_title">About</a>
+              <a href="#" data-modal-trigger="about" class="navbar_title">
+                About
+              </a>
             </ul>
           </div>
           <!-- right icons -->

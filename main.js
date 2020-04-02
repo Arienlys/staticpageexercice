@@ -15,7 +15,6 @@ const modifyJumboTronText = () => {
 const headerEventClickHandler = event => {
   event.preventDefault();
 
-
   /** ~~~~~~~~~~~~~~~~~~~~~~~ MODIFYING CLASSES ~~~~~~~~~~~~~~~~~~~~~~~ **/
   navbar.classList.toggle("red-navbar");
 
@@ -34,8 +33,32 @@ const openDropDown = event => {
   const div = event.target.closest(".dropdown");
   const dropDown = div.querySelector(".visibility");
   dropDown.classList.toggle("dropdown-content");
-}
+};
 
 for (const button of buttonNavbar) {
   button.addEventListener("click", openDropDown);
 }
+
+const openModal = e => {
+  const { modalTrigger } = e.target.dataset;
+  const selector = `[data-modal="${modalTrigger}"]`;
+  const modal = window.document.querySelector(selector);
+  modal.classList.remove("visibility");
+  modal.classList.add("modal");
+};
+// Add event to trigger modals
+
+const modalTriggers = window.document.querySelectorAll("[data-modal-trigger]");
+
+for (const item of modalTriggers) {
+  item.addEventListener("click", openModal);
+}
+
+/* Exercise
+  - add a close modal button
+    - once the modal is closed you need to be able to open it again
+  - Add another modal with different content and with a close button
+  - Add another button to open the about modal ( the first one )
+    - Use what we learned about data attributes to change the text of the modal with javascript (hint: element.innerHTML)
+  - Bonus: re-implement the gallery using this concepts
+*/
