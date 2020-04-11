@@ -25,7 +25,11 @@ const headerEventClickHandler = event => {
 /** ~~~~~~~~~~~~~~~~~~~~~~~ ADDING EVENTS ~~~~~~~~~~~~~~~~~~~~~~~ **/
 headerLogo.addEventListener("click", headerEventClickHandler);
 
-// Exercise
+
+
+
+/** ~~~~~~~~~~~~~~~~~~~~~~~ EXERCICES ~~~~~~~~~~~~~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~ DROPDOWN ~~~~~~~~~~~ **/
 /* Use querySelector and click events and classList to re-implement the dropdowns */
 const buttonNavbar = window.document.querySelectorAll("nav .dropdown");
 
@@ -39,6 +43,8 @@ for (const button of buttonNavbar) {
   button.addEventListener("click", openDropDown);
 }
 
+/** ~~~~~~~~~~~ MODAL ~~~~~~~~~~~ **/
+/** ~~~~~ TRIGGER OF THE MODALS ~~~~~ **/
 const openModal = e => {
   const { modalTrigger } = e.target.dataset;
   const selector = `[data-modal="${modalTrigger}"]`;
@@ -46,8 +52,8 @@ const openModal = e => {
   modal.classList.remove("visibility");
   modal.classList.add("modal");
 };
-// Add event to trigger modals
 
+// Add event to trigger modals
 const modalTriggers = window.document.querySelectorAll("[data-modal-trigger]");
 
 for (const item of modalTriggers) {
@@ -55,10 +61,35 @@ for (const item of modalTriggers) {
 }
 
 /* Exercise
-  - add a close modal button
-    - once the modal is closed you need to be able to open it again
-  - Add another modal with different content and with a close button
-  - Add another button to open the about modal ( the first one )
-    - Use what we learned about data attributes to change the text of the modal with javascript (hint: element.innerHTML)
+  - add a close modal button ((done by adding a button with the text "X", adding of a new class to put it in place))
+    - once the modal is closed you need to be able to open it again ((done with the closeModal function :D))
+  - Add another modal with different content and with a close button ((done on the "special" a, following the same model (￣▽￣)b))
+  - Add another button to open the about modal ( the first one )  ((done by adding "data-modal-trigger" to the about <a> at the end of the page))
+    - Use what we learned about data attributes to change the text of the modal with javascript (hint: element.innerHTML) ((DONE!!! using the jumbotron example!))
   - Bonus: re-implement the gallery using this concepts
 */
+
+/** ~~~~~~~~~~~ CLOSING MODAL ~~~~~~~~~~~ **/
+const closeModal = event => {
+  const modal = event.target.closest(".modal");
+  modal.classList.remove("modal");
+  modal.classList.add("visibility");
+}
+
+const closeButton = window.document.querySelectorAll(".modal-button");
+
+for (const item of closeButton) {
+  item.addEventListener("click", closeModal);
+}
+
+/** ~~~~~~~~~~~ CHANGING FIRST MODAL ~~~~~~~~~~~ **/
+const modifyModal = event => {
+  const aboutContent = event.target.querySelector(".modal-content");
+  const newElement = document.createElement("p");
+  newElement.innerHTML = "You! Yes you! You're Awesome :D!";
+  aboutContent.innerHTML = "";
+  aboutContent.appendChild(newElement);
+};
+
+const aboutModal = window.document.querySelector('[data-modal="about"]');
+aboutModal.addEventListener("click", modifyModal);

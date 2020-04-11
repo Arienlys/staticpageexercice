@@ -1,188 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="page.css" />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <title>Doggy daycare</title>
-  </head>
 
-  <body>
-    <div class="visibility" data-modal="about">
-      <div class="modal-inner">
-        My awesome popup
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="page.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="footer.css" />
+  <title>Doggy daycare</title>
+</head>
+
+<body>
+  <!---- modals ---->
+  <!-- about modal -->
+  <div class="visibility" data-modal="about">
+    <div class="modal-inner">
+      <button class="modal-button">X</button>
+      <div class="modal-content">
+        <p>My awesome popup</p>
       </div>
     </div>
-    <header>
-      <div class="header page_margin">
-        <a href="#"><img class="header_logo" src="./images\logo.png"/></a>
+  </div>
 
-        <!-- on top of the navbar -->
-        <div class="utility">
-          <div class="header_style">
-            <img src="./images/Hours.png" class="little_buttons" />
-            <div class="info_text">
-              <p>BOARDING HOURS</p>
-              <p>Mon - Sat: 7:00 am - 6:00 pm</p>
-            </div>
-          </div>
+  <!-- special modal -->
+  <div class="visibility" data-modal="special">
+    <div class="modal-inner">
+      <button class="modal-button">X</button>
+      <div class="modal-content">
+        <p>Hello! Have a good day! :D</p>
+      </div>
+    </div>
+  </div>
 
-          <div class="header_style">
-            <img src="./images/Phone.png" class="little_buttons" />
-            <div class="info_text">
-              <p>CALL US</p>
-              <p>(555) Pup-Cares</p>
-            </div>
-          </div>
+  <!---- end of the modals ---->
+  <header>
+    <div class="header page_margin">
+      <a href="#"><img class="header_logo" src="./images\logo.png" /></a>
 
-          <div class="red_button">
-            <button type="submit">
-              <a class="info_text" href="#appointement">Make an appointment</a>
-            </button>
+      <!-- on top of the navbar -->
+      <div class="utility">
+        <div class="header_style">
+          <img src="./images/Hours.png" class="little_buttons" />
+          <div class="info_text">
+            <p>BOARDING HOURS</p>
+            <p>Mon - Sat: 7:00 am - 6:00 pm</p>
           </div>
         </div>
 
-        <!-- Navbar -->
-        <nav class="navbar">
-          <div class="navbar_sections">
-            <ul class="navbar_ul">
-              <div class="dropdown">
-                <button class="navbar_title">
-                  Services
-                  <img src="./images/expand.png" class="vertical_align" />
-                </button>
-                <div class="visibility">
-                  <a href="#" class="navbar_title">Nico </a>
-                  <a href="#" class="navbar_title">is </a>
-                  <a href="#" class="navbar_title">the best</a>
-                </div>
-              </div>
-              <a href="#popup1" class="navbar_title">Specials</a>
-              <a href="#popup1" class="navbar_title">Facilities</a>
-              <a href="#popup1" class="navbar_title">Reviews</a>
-              <div class="dropdown">
-                <button class="navbar_title">
-                  Shop
-                  <img
-                    src="./images/expand.png"
-                    class="vertical_align navbar_title"
-                  />
-                </button>
-                <div class="visibility">
-                  <a href="#" class="navbar_title">you</a>
-                  <a href="#" class="navbar_title">are</a>
-                  <a href="#" class="navbar_title">awesome :v</a>
-                </div>
-              </div>
-              <a href="#" data-modal-trigger="about" class="navbar_title">
-                About
-              </a>
-            </ul>
+        <div class="header_style">
+          <img src="./images/Phone.png" class="little_buttons" />
+          <div class="info_text">
+            <p>CALL US</p>
+            <p>(555) Pup-Cares</p>
           </div>
-          <!-- right icons -->
-          <div class="navbar_right_icons">
-            <a href="#popup1" class="little_buttons"
-              ><img src="./images/search.png"
-            /></a>
-            <a href="#popup1" class="little_buttons"
-              ><img src="./images/shopping.png"
-            /></a>
-          </div>
-        </nav>
+        </div>
+
+        <div class="red_button">
+          <button type="submit">
+            <a class="info_text" href="#appointement">Make an appointment</a>
+          </button>
+        </div>
       </div>
-    </header>
 
-    <main>
-      <!-- Blue header picture -->
-      <div class="blue_header_picture"></div>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="navbar_sections">
+          <ul class="navbar_ul">
+            <div class="dropdown">
+              <button class="navbar_title">
+                Services
+                <img src="./images/expand.png" class="vertical_align" />
+              </button>
+              <div class="visibility">
+                <a href="#" class="navbar_title">Nico </a>
+                <a href="#" class="navbar_title">is </a>
+                <a href="#" class="navbar_title">the best</a>
+              </div>
+            </div>
+            <a href="#popup1" data-modal-trigger="special" class="navbar_title">Specials</a>
+            <a href="#popup1" class="navbar_title">Facilities</a>
+            <a href="#popup1" class="navbar_title">Reviews</a>
+            <div class="dropdown">
+              <button class="navbar_title">
+                Shop
+                <img src="./images/expand.png" class="vertical_align navbar_title" />
+              </button>
+              <div class="visibility">
+                <a href="#" class="navbar_title">you</a>
+                <a href="#" class="navbar_title">are</a>
+                <a href="#" class="navbar_title">awesome :v</a>
+              </div>
+            </div>
+            <a href="#" data-modal-trigger="about" class="navbar_title">
+              About
+            </a>
+          </ul>
+        </div>
+        <!-- right icons -->
+        <div class="navbar_right_icons">
+          <a href="#popup1" class="little_buttons"><img src="./images/search.png" /></a>
+          <a href="#popup1" class="little_buttons"><img src="./images/shopping.png" /></a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-      <!-- Text on the blue picture -->
-      <div class="jumbotron">
-        <p class="jumbotron_text">Premier dog boarding, daycare & day spa</p>
+  <main>
+    <!-- Blue header picture -->
+    <div class="blue_header_picture"></div>
 
-        <div class="red_button boxshad">
+    <!-- Text on the blue picture -->
+    <div class="jumbotron">
+      <p class="jumbotron_text">Premier dog boarding, daycare & day spa</p>
+
+      <div class="red_button boxshad">
+        <button type="submit">
+          <a class="info_text" href="#popup1">Make an appointment</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- about -->
+    <div class="about purple_box page_margin">
+      <img class="circles" src="./images/Circles.png" />
+      <p class="main_text main_section_name text_color">
+        &#11048; Who we are
+      </p>
+      <p class="main_text main_section_title text_color title_size">
+        Nemo enim ipsam voluptatem quia voluptas in proident
+      </p>
+      <p class="main_text main_section_text text_color">
+        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+        suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis
+        autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+        nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+        voluptas nulla pariatur.
+      </p>
+
+      <!-- Two pictures at the bottom -->
+      <img class="doggy doggy1" src="./images/doggy1.png" />
+    </div>
+
+    <!-- Valprop -->
+    <div class="div_three_parts">
+      <p class="main_text main_section_name text_alternate_color">
+        &#11048; Our Promise to You
+      </p>
+      <p class="main_text main_section_title">
+        Sed perspiciatis omnis iste natus
+      </p>
+
+      <!-- Three parts -->
+      <div class="three_cards">
+        <div class="single_part">
+          <img class="parts_picture" src="./images/heart.png" />
+          <div>
+            <p class="main_subtitle">24/7 Love & Care</p>
+            <p class="main_text">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium corrupti quos dolores et quas.
+            </p>
+          </div>
+        </div>
+
+        <div class="single_part">
+          <img class="parts_picture" src="./images/vet.png" />
+          <div>
+            <p class="main_subtitle">On-site Veterinarian</p>
+            <p class="main_text">
+              Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+              sed quia non numquam eius modi tempora incidunt.
+            </p>
+          </div>
+        </div>
+
+        <div class="single_part">
+          <img class="parts_picture" src="./images/dogstream.png" />
+          <div>
+            <p class="main_subtitle">Live-stream Cameras</p>
+            <p class="main_text">
+              Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+              esse quam nihil molestiae consequatur illum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Doggy ban -->
+    <div class="second_doggy_ban">
+      <div class="text_ban">
+        <p class="main_text main_section_title text_color">
+          Nemo enim ipsam voluptatem quia voluptas in proident
+        </p>
+        <div class="red_button">
           <button type="submit">
             <a class="info_text" href="#popup1">Make an appointment</a>
           </button>
         </div>
       </div>
+      <img src="./images/wblob.png" class="wblob" />
+    </div>
 
-      <!-- about -->
-      <div class="about purple_box page_margin">
-        <img class="circles" src="./images/Circles.png" />
-        <p class="main_text main_section_name text_color">
-          &#11048; Who we are
-        </p>
-        <p class="main_text main_section_title text_color title_size">
-          Nemo enim ipsam voluptatem quia voluptas in proident
-        </p>
-        <p class="main_text main_section_text text_color">
-          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-          suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis
-          autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-          nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-          voluptas nulla pariatur.
-        </p>
+    <!-- Services part -->
+    <p class="main_text main_section_name text_alternate_color page_margin">
+      &#11048; Our Services
+    </p>
+    <p class="main_text main_section_title page_margin">
+      Sed perspiciatis omnis iste natus
+    </p>
 
-        <!-- Two pictures at the bottom -->
-        <img class="doggy doggy1" src="./images/doggy1.png" />
+    <!-- Cards part -->
+    <div class="services page_margin">
+      <div class="card service_card">
+        <img class="service_picture margin_picture" src="./images/bed.png" />
+        <p class="main_subtitle service_title">Pet Boarding (No Cages)</p>
+        <p class="main_text service_text margin_picture">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium corrupti quos dolores et quas.
+        </p>
       </div>
 
-      <!-- Valprop -->
-      <div class="div_three_parts">
-        <p class="main_text main_section_name text_alternate_color">
-          &#11048; Our Promise to You
+      <div class="card service_card">
+        <img class="service_picture margin_picture" src="./images/wdog.png" />
+        <p class="main_subtitle service_title">Pet Daycare</p>
+        <p class="main_text service_text margin_picture">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium corrupti quos dolores et quas.
         </p>
-        <p class="main_text main_section_title">
-          Sed perspiciatis omnis iste natus
+      </div>
+
+      <div class="card service_card">
+        <img class="service_picture margin_picture" src="./images/bath.png" />
+        <p class="main_subtitle service_title">Pet Day Spa & Grooming</p>
+        <p class="main_text service_text margin_picture">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium corrupti quos dolores et quas.
         </p>
+      </div>
 
-        <!-- Three parts -->
-        <div class="three_cards">
-          <div class="single_part">
-            <img class="parts_picture" src="./images/heart.png" />
-            <div>
-              <p class="main_subtitle">24/7 Love & Care</p>
-              <p class="main_text">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium corrupti quos dolores et quas.
-              </p>
-            </div>
-          </div>
+      <div class="card service_card">
+        <img class="service_picture margin_picture" src="./images/food.png" />
+        <p class="main_subtitle service_title">Custom Meal Plans</p>
+        <p class="main_text service_text margin_picture">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium corrupti quos dolores et quas.
+        </p>
+      </div>
 
-          <div class="single_part">
-            <img class="parts_picture" src="./images/vet.png" />
-            <div>
-              <p class="main_subtitle">On-site Veterinarian</p>
-              <p class="main_text">
-                Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                sed quia non numquam eius modi tempora incidunt.
-              </p>
-            </div>
-          </div>
+      <div class="card service_card">
+        <img class="service_picture margin_picture" src="./images/trophy.png" />
+        <p class="main_subtitle service_title">Pet Training</p>
+        <p class="main_text service_text margin_picture">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium corrupti quos dolores et quas.
+        </p>
+      </div>
 
-          <div class="single_part">
-            <img class="parts_picture" src="./images/dogstream.png" />
-            <div>
-              <p class="main_subtitle">Live-stream Cameras</p>
-              <p class="main_text">
-                Quis autem vel eum iure reprehenderit qui in ea voluptate velit
-                esse quam nihil molestiae consequatur illum.
-              </p>
+      <div class="card service_card">
+        <img class="service_picture margin_picture" src="./images/collar.png" />
+        <p class="main_subtitle service_title">Shop Our Store!</p>
+        <p class="main_text service_text margin_picture">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium corrupti quos dolores et quas.
+        </p>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="red_button service_button">
+      <button type="submit">
+        <a class="info_text" href="#popup1">Learn more</a>
+      </button>
+    </div>
+
+    <!-- Second banner -->
+    <div class="second_banner"></div>
+
+    <!-- Form -->
+    <div class="form_on_banner form_input" id="Appointment">
+      <div class="relative">
+        <div class="form_base form_input">
+          <p class="main_text main_section_title text_color">
+            Make an appointment
+          </p>
+          <form>
+            <div class="form_input form_justify">
+              <label>
+                <span class="label">Your name</span>
+                <input class="input" type="text" name="name" placeholder="name" required />
+              </label>
+              <label>
+                <span class="label">Your email</span>
+                <input class="input" type="email" name="email" placeholder="E-mail" required />
+              </label>
+              <label>
+                <span class="label"> Your phone</span>
+                <input class="input" type="text" name="phone" placeholder="Phone Number" required />
+              </label>
+              <label>
+                <span class="label">Select a service</span>
+                <select class="input select" name="service">
+                  <option class="option" value="0">Select Service</option>
+                  <option class="option" value="1">Pet Boarding</option>
+                  <option class="option" value="2">Pet Daycare</option>
+                  <option class="option" value="3">Day Spa & Grooming</option>
+                  <option class="option" value="4">Custom Meal Plans</option>
+                  <option class="option" value="5">Pet Training</option>
+                  <option class="option" value="6">Shop</option>
+                </select>
+              </label>
+              <label>
+                <span class="label">Write your message</span>
+                <textarea class="input input_text_area" rows="10"
+                  placeholder="Tell us about your puppers include his/her name"></textarea>
+              </label>
             </div>
-          </div>
+            <div class="red_button button_form">
+              <button type="submit">
+                <a class="info_text" href="#popup1">Make an appointment</a>
+              </button>
+            </div>
+          </form>
+        </div>
+        <img class="form_blob" src="./images/Blob.png" />
+        <img class="form_circles" src="./images/scircles.png" />
+      </div>
+      <div class="form_left_title">
+        <p class="stat_text stat_title text_color">
+          Maxime placeat facere possimus omnis
+        </p>
+        <p class="stat_text stat_number text_color">5,700+</p>
+        <p class="stat_text stat_customer text_color">customers served</p>
+      </div>
+      <img src="./images/wblob2.png" class="wblob2" />
+    </div>
+
+    <!-- Gallery & Live streams -->
+    <div class="purple_box page_margin gallery_margin">
+      <p class="main_text main_section_name text_color">
+        &#11048; Gallery & Live streams
+      </p>
+      <p class="main_text main_section_title text_color title_size">
+        Check out our hard workers
+      </p>
+
+      <div class="tabs">
+        <input type="radio" name="tabs" id="tabone" checked="checked" />
+        <label for="tabone" class="text_color">Gallery</label>
+        <div class="tab">
+          <img class="doggy doggy2" src="./images/slide3.png" />
+        </div>
+
+        <input type="radio" name="tabs" id="tabtwo" />
+        <label for="tabtwo" class="text_color"> Live stream: Yard 1</label>
+        <div class="tab">
+          <img class="doggy doggy2" src="./images/doggy4.png" />
+        </div>
+
+        <input type="radio" name="tabs" id="tabthree" />
+        <label for="tabthree" class="text_color"> Live stream: Yard 2</label>
+        <div class="tab">
+          <img class="doggy doggy2" src="./images/slide1.png" />
+        </div>
+
+        <input type="radio" name="tabs" id="tabfour" />
+        <label for="tabfour" class="text_color"> Live stream: Yard 3</label>
+        <div class="tab">
+          <img class="doggy doggy2" src="./images/slide2.png" />
         </div>
       </div>
+    </div>
 
-      <!-- Second Doggy ban -->
-      <div class="second_doggy_ban">
-        <div class="text_ban">
-          <p class="main_text main_section_title text_color">
-            Nemo enim ipsam voluptatem quia voluptas in proident
+    <!-- customers -->
+    <div class="customer_div">
+      <div class="customer_title">
+        <p class="main_text main_section_name text_alternate_color">
+          &#11048; Our customers
+        </p>
+        <p class="main_text main_section_title">
+          Illum qui dolorem eum quo voluptas ut distinctio
+        </p>
+      </div>
+      <div class="card customer_card">
+        <p class="main_text main_section_text customer_justify">
+          “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut
+          enim illum ad minim veniam, quis ea exercitation ullamco cillum ut
+          enim dolore.”
+        </p>
+        <img class="customer_picture" src="./images/cullen.png" />
+        <p class="main_text main_section_text text_red">Cullen Bohannon</p>
+      </div>
+      <div class="card customer_card">
+        <p class="main_text main_section_text customer_justify">
+          “Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+          quae ab illo inventore veritatis et quasi ipsam voluptatem
+          aspernatur.”
+        </p>
+        <img class="customer_picture" src="./images/jennifer.png" />
+        <p class="main_text main_section_text text_red">Jennifer Thomas</p>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <!-- Impact -->
+      <div class="impact page_margin">
+        <img class="doggy5" src="./images/doggy5.png" />
+        <img class="green_blob" src="./images/greenblob.png" />
+        <p class="main_text main_section_name text_color">
+          &#11048; Our impact
+        </p>
+        <p class="main_text main_section_title text_color stats_title">
+          Nemo enim ipsam voluptatem quia voluptas
+        </p>
+        <div class="stats_numbers">
+          <div class="stats_totals">
+            <img class="stats_icons" src="./images/duck.png" />
+            <p class="main_section_title text_color stats_margin">3,700</p>
+            <p class="main_text main_section_text text_alternate_color stats_margin">
+              puppy baths
+            </p>
+          </div>
+          <div class="stats_totals">
+            <img class="stats_icons" src="./images/house.png" />
+            <p class="main_section_title text_color stats_margin">4,500</p>
+            <p class="main_text main_section_text text_alternate_color stats_margin">
+              dogs boarded
+            </p>
+          </div>
+          <div class="stats_totals">
+            <img class="stats_icons" src="./images/leash.png" />
+            <p class="main_section_title text_color stats_margin">2,900</p>
+            <p class="main_text main_section_text text_alternate_color stats_margin">
+              pups trained
+            </p>
+          </div>
+          <div class="stats_totals">
+            <img class="stats_icons" src="./images/foodbowl.png" />
+            <p class="main_section_title text_color stats_margin">12k+</p>
+            <p class="main_text main_section_text text_alternate_color stats_margin">
+              meals served
+            </p>
+          </div>
+        </div>
+
+        <!-- Last purple div -->
+        <div class="purple_banner">
+          <p class="text_color last_text">
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
           <div class="red_button">
             <button type="submit">
@@ -190,376 +460,91 @@
             </button>
           </div>
         </div>
-        <img src="./images/wblob.png" class="wblob" />
       </div>
+    </div>
+  </main>
 
-      <!-- Services part -->
-      <p class="main_text main_section_name text_alternate_color page_margin">
-        &#11048; Our Services
-      </p>
-      <p class="main_text main_section_title page_margin">
-        Sed perspiciatis omnis iste natus
-      </p>
-
-      <!-- Cards part -->
-      <div class="services page_margin">
-        <div class="card service_card">
-          <img class="service_picture margin_picture" src="./images/bed.png" />
-          <p class="main_subtitle service_title">Pet Boarding (No Cages)</p>
-          <p class="main_text service_text margin_picture">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium corrupti quos dolores et quas.
-          </p>
-        </div>
-
-        <div class="card service_card">
-          <img class="service_picture margin_picture" src="./images/wdog.png" />
-          <p class="main_subtitle service_title">Pet Daycare</p>
-          <p class="main_text service_text margin_picture">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium corrupti quos dolores et quas.
-          </p>
-        </div>
-
-        <div class="card service_card">
-          <img class="service_picture margin_picture" src="./images/bath.png" />
-          <p class="main_subtitle service_title">Pet Day Spa & Grooming</p>
-          <p class="main_text service_text margin_picture">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium corrupti quos dolores et quas.
-          </p>
-        </div>
-
-        <div class="card service_card">
-          <img class="service_picture margin_picture" src="./images/food.png" />
-          <p class="main_subtitle service_title">Custom Meal Plans</p>
-          <p class="main_text service_text margin_picture">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium corrupti quos dolores et quas.
-          </p>
-        </div>
-
-        <div class="card service_card">
-          <img
-            class="service_picture margin_picture"
-            src="./images/trophy.png"
-          />
-          <p class="main_subtitle service_title">Pet Training</p>
-          <p class="main_text service_text margin_picture">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium corrupti quos dolores et quas.
-          </p>
-        </div>
-
-        <div class="card service_card">
-          <img
-            class="service_picture margin_picture"
-            src="./images/collar.png"
-          />
-          <p class="main_subtitle service_title">Shop Our Store!</p>
-          <p class="main_text service_text margin_picture">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium corrupti quos dolores et quas.
-          </p>
-        </div>
-      </div>
-
-      <!-- Button -->
-      <div class="red_button service_button">
-        <button type="submit">
-          <a class="info_text" href="#popup1">Learn more</a>
-        </button>
-      </div>
-
-      <!-- Second banner -->
-      <div class="second_banner"></div>
-
-      <!-- Form -->
-      <div class="form_on_banner form_input" id="Appointment">
-        <div class="relative">
-          <div class="form_base form_input">
-            <p class="main_text main_section_title text_color">
-              Make an appointment
-            </p>
-            <form>
-              <div class="form_input form_justify">
-                <label>
-                  <span class="label">Your name</span>
-                  <input
-                    class="input"
-                    type="text"
-                    name="name"
-                    placeholder="name"
-                    required
-                  />
-                </label>
-                <label>
-                  <span class="label">Your email</span>
-                  <input
-                    class="input"
-                    type="email"
-                    name="email"
-                    placeholder="E-mail"
-                    required
-                  />
-                </label>
-                <label>
-                  <span class="label"> Your phone</span>
-                  <input
-                    class="input"
-                    type="text"
-                    name="phone"
-                    placeholder="Phone Number"
-                    required
-                  />
-                </label>
-                <label>
-                  <span class="label">Select a service</span>
-                  <select class="input select" name="service">
-                    <option class="option" value="0">Select Service</option>
-                    <option class="option" value="1">Pet Boarding</option>
-                    <option class="option" value="2">Pet Daycare</option>
-                    <option class="option" value="3">Day Spa & Grooming</option>
-                    <option class="option" value="4">Custom Meal Plans</option>
-                    <option class="option" value="5">Pet Training</option>
-                    <option class="option" value="6">Shop</option>
-                  </select>
-                </label>
-                <label>
-                  <span class="label">Write your message</span>
-                  <textarea
-                    class="input input_text_area"
-                    rows="10"
-                    placeholder="Tell us about your puppers include his/her name"
-                  ></textarea>
-                </label>
-              </div>
-              <div class="red_button button_form">
-                <button type="submit">
-                  <a class="info_text" href="#popup1">Make an appointment</a>
-                </button>
-              </div>
-            </form>
-          </div>
-          <img class="form_blob" src="./images/Blob.png" />
-          <img class="form_circles" src="./images/scircles.png" />
-        </div>
-        <div class="form_left_title">
-          <p class="stat_text stat_title text_color">
-            Maxime placeat facere possimus omnis
-          </p>
-          <p class="stat_text stat_number text_color">5,700+</p>
-          <p class="stat_text stat_customer text_color">customers served</p>
-        </div>
-        <img src="./images/wblob2.png" class="wblob2" />
-      </div>
-
-      <!-- Gallery & Live streams -->
-      <div class="purple_box page_margin gallery_margin">
-        <p class="main_text main_section_name text_color">
-          &#11048; Gallery & Live streams
-        </p>
-        <p class="main_text main_section_title text_color title_size">
-          Check out our hard workers
-        </p>
-
-        <div class="tabs">
-          <input type="radio" name="tabs" id="tabone" checked="checked" />
-          <label for="tabone" class="text_color">Gallery</label>
-          <div class="tab">
-            <img class="doggy doggy2" src="./images/slide3.png" />
-          </div>
-
-          <input type="radio" name="tabs" id="tabtwo" />
-          <label for="tabtwo" class="text_color"> Live stream: Yard 1</label>
-          <div class="tab">
-            <img class="doggy doggy2" src="./images/doggy4.png" />
-          </div>
-
-          <input type="radio" name="tabs" id="tabthree" />
-          <label for="tabthree" class="text_color"> Live stream: Yard 2</label>
-          <div class="tab">
-            <img class="doggy doggy2" src="./images/slide1.png" />
-          </div>
-
-          <input type="radio" name="tabs" id="tabfour" />
-          <label for="tabfour" class="text_color"> Live stream: Yard 3</label>
-          <div class="tab">
-            <img class="doggy doggy2" src="./images/slide2.png" />
-          </div>
-        </div>
-      </div>
-
-      <!-- customers -->
-      <div class="customer_div">
-        <div class="customer_title">
-          <p class="main_text main_section_name text_alternate_color">
-            &#11048; Our customers
-          </p>
-          <p class="main_text main_section_title">
-            Illum qui dolorem eum quo voluptas ut distinctio
-          </p>
-        </div>
-        <div class="card customer_card">
-          <p class="main_text main_section_text customer_justify">
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut
-            enim illum ad minim veniam, quis ea exercitation ullamco cillum ut
-            enim dolore.”
-          </p>
-          <img class="customer_picture" src="./images/cullen.png" />
-          <p class="main_text main_section_text text_red">Cullen Bohannon</p>
-        </div>
-        <div class="card customer_card">
-          <p class="main_text main_section_text customer_justify">
-            “Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi ipsam voluptatem
-            aspernatur.”
-          </p>
-          <img class="customer_picture" src="./images/jennifer.png" />
-          <p class="main_text main_section_text text_red">Jennifer Thomas</p>
-        </div>
-      </div>
-
-      <!-- Stats -->
-      <div class="stats">
-        <!-- Impact -->
-        <div class="impact page_margin">
-          <img class="doggy5" src="./images/doggy5.png" />
-          <img class="green_blob" src="./images/greenblob.png" />
-          <p class="main_text main_section_name text_color">
-            &#11048; Our impact
-          </p>
-          <p class="main_text main_section_title text_color stats_title">
-            Nemo enim ipsam voluptatem quia voluptas
-          </p>
-          <div class="stats_numbers">
-            <div class="stats_totals">
-              <img class="stats_icons" src="./images/duck.png" />
-              <p class="main_section_title text_color stats_margin">3,700</p>
-              <p
-                class="main_text main_section_text text_alternate_color stats_margin"
-              >
-                puppy baths
-              </p>
-            </div>
-            <div class="stats_totals">
-              <img class="stats_icons" src="./images/house.png" />
-              <p class="main_section_title text_color stats_margin">4,500</p>
-              <p
-                class="main_text main_section_text text_alternate_color stats_margin"
-              >
-                dogs boarded
-              </p>
-            </div>
-            <div class="stats_totals">
-              <img class="stats_icons" src="./images/leash.png" />
-              <p class="main_section_title text_color stats_margin">2,900</p>
-              <p
-                class="main_text main_section_text text_alternate_color stats_margin"
-              >
-                pups trained
-              </p>
-            </div>
-            <div class="stats_totals">
-              <img class="stats_icons" src="./images/foodbowl.png" />
-              <p class="main_section_title text_color stats_margin">12k+</p>
-              <p
-                class="main_text main_section_text text_alternate_color stats_margin"
-              >
-                meals served
-              </p>
-            </div>
-          </div>
-
-          <!-- Last purple div -->
-          <div class="purple_banner">
-            <p class="text_color last_text">
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
-            <div class="red_button">
-              <button type="submit">
-                <a class="info_text" href="#popup1">Make an appointment</a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <!-- white footer -->
-      <div class="footer_white footer_margin footer_text">
-        <!-- logo -->
-        <div class="social_media">
-          <img src="./images/footerlogo.png" />
-          <p>
-            This is a blurb about the company sed do eiusmod tempor incididunt
-            ut labore et dolore ex magna aliqua.
-          </p>
-          <div class="media_logos ">
-            <img src="./images/fbfooter.png" />
-            <img src="./images/twitterfooter.png" />
-            <img src="./images/instafooter.png" />
-            <img src="./images/ytfooter.png" />
-          </div>
-        </div>
-
-        <!-- links -->
-        <div class="links">
-          <p class="footer_title">Explore links</p>
-          <table>
-            <tr>
-              <td class="column_links">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Specials</a>
-                <a href="#">Estimates</a>
-              </td>
-              <td class="column_links">
-                <a href="#">Reviews</a>
-                <a href="#">Shop</a>
-                <a href="#">Careers</a>
-                <a href="#">FAQs</a>
-              </td>
-            </tr>
-          </table>
-        </div>
-
-        <!-- contacts -->
-        <div class="contacts">
-          <p class="footer_title">Contact</p>
-          <table>
-            <tr>
-              <td><img src="./images/placefooter.png" /></td>
-              <td><p>321 Pikes Place Parkway Seattle, WA 54321</p></td>
-            </tr>
-            <tr>
-              <td><img src="./images/smartfooter.png" /></td>
-              <td><p>(555) 765-4321</p></td>
-            </tr>
-            <tr>
-              <td><img src="./images/emailfooter.png" /></td>
-              <td><p>info@company.com</p></td>
-            </tr>
-            <tr>
-              <td><img src="./images/timerfooter.png" /></td>
-              <td><p>Mon-Sat: 7:00 am - 6:00 pm</p></td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <!-- purple bar footer -->
-      <div class="footer_purple footer_margin">
+  <footer>
+    <!-- white footer -->
+    <div class="footer_white footer_margin footer_text">
+      <!-- logo -->
+      <div class="social_media">
+        <img src="./images/footerlogo.png" />
         <p>
-          Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
+          This is a blurb about the company sed do eiusmod tempor incididunt
+          ut labore et dolore ex magna aliqua.
         </p>
-        <p>&#x24B8; 2018 Company. Privacy Policy | Terms & Conditions</p>
+        <div class="media_logos ">
+          <img src="./images/fbfooter.png" />
+          <img src="./images/twitterfooter.png" />
+          <img src="./images/instafooter.png" />
+          <img src="./images/ytfooter.png" />
+        </div>
       </div>
-    </footer>
 
-    <script type="text/javascript" src="main.js"></script>
-  </body>
+      <!-- links -->
+      <div class="links">
+        <p class="footer_title">Explore links</p>
+        <table>
+          <tr>
+            <td class="column_links">
+              <a data-modal-trigger="about" href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Specials</a>
+              <a href="#">Estimates</a>
+            </td>
+            <td class="column_links">
+              <a href="#">Reviews</a>
+              <a href="#">Shop</a>
+              <a href="#">Careers</a>
+              <a href="#">FAQs</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- contacts -->
+      <div class="contacts">
+        <p class="footer_title">Contact</p>
+        <table>
+          <tr>
+            <td><img src="./images/placefooter.png" /></td>
+            <td>
+              <p>321 Pikes Place Parkway Seattle, WA 54321</p>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./images/smartfooter.png" /></td>
+            <td>
+              <p>(555) 765-4321</p>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./images/emailfooter.png" /></td>
+            <td>
+              <p>info@company.com</p>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./images/timerfooter.png" /></td>
+            <td>
+              <p>Mon-Sat: 7:00 am - 6:00 pm</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- purple bar footer -->
+    <div class="footer_purple footer_margin">
+      <p>
+        Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
+      </p>
+      <p>&#x24B8; 2018 Company. Privacy Policy | Terms & Conditions</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
 </html>
