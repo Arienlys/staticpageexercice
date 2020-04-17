@@ -12,7 +12,7 @@ const modifyJumboTronText = () => {
 };
 
 //  this is an arrow function to handle the click event on the headerLogo
-const headerEventClickHandler = event => {
+const headerEventClickHandler = (event) => {
   event.preventDefault();
 
   /** ~~~~~~~~~~~~~~~~~~~~~~~ MODIFYING CLASSES ~~~~~~~~~~~~~~~~~~~~~~~ **/
@@ -25,15 +25,12 @@ const headerEventClickHandler = event => {
 /** ~~~~~~~~~~~~~~~~~~~~~~~ ADDING EVENTS ~~~~~~~~~~~~~~~~~~~~~~~ **/
 headerLogo.addEventListener("click", headerEventClickHandler);
 
-
-
-
-/** ~~~~~~~~~~~~~~~~~~~~~~~ EXERCICES ~~~~~~~~~~~~~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~~~~~~~~~~~~~ EXERCISES ~~~~~~~~~~~~~~~~~~~~~~~ **/
 /** ~~~~~~~~~~~ DROPDOWN ~~~~~~~~~~~ **/
 /* Use querySelector and click events and classList to re-implement the dropdowns */
 const buttonNavbar = window.document.querySelectorAll("nav .dropdown");
 
-const openDropDown = event => {
+const openDropDown = (event) => {
   const div = event.target.closest(".dropdown");
   const dropDown = div.querySelector(".visibility");
   dropDown.classList.toggle("dropdown-content");
@@ -45,7 +42,7 @@ for (const button of buttonNavbar) {
 
 /** ~~~~~~~~~~~ MODAL ~~~~~~~~~~~ **/
 /** ~~~~~ TRIGGER OF THE MODALS ~~~~~ **/
-const openModal = e => {
+const openModal = (e) => {
   const { modalTrigger } = e.target.dataset;
   const selector = `[data-modal="${modalTrigger}"]`;
   const modal = window.document.querySelector(selector);
@@ -70,11 +67,11 @@ for (const item of modalTriggers) {
 */
 
 /** ~~~~~~~~~~~ CLOSING MODAL ~~~~~~~~~~~ **/
-const closeModal = event => {
+const closeModal = (event) => {
   const modal = event.target.closest(".modal");
   modal.classList.remove("modal");
   modal.classList.add("visibility");
-}
+};
 
 const closeButton = window.document.querySelectorAll(".modal-button");
 
@@ -82,8 +79,9 @@ for (const item of closeButton) {
   item.addEventListener("click", closeModal);
 }
 
+// Change this to 'change the html' WHen the popup is opened -> When the user click ont he second about the text is already the 'new' one
 /** ~~~~~~~~~~~ CHANGING FIRST MODAL ~~~~~~~~~~~ **/
-const modifyModal = event => {
+const modifyModal = (event) => {
   const aboutContent = event.target.querySelector(".modal-content");
   const newElement = document.createElement("p");
   newElement.innerHTML = "You! Yes you! You're Awesome :D!";
@@ -93,3 +91,28 @@ const modifyModal = event => {
 
 const aboutModal = window.document.querySelector('[data-modal="about"]');
 aboutModal.addEventListener("click", modifyModal);
+
+/*  Stuff to do:
+- Bonus: re-implement the gallery using this concepts
+- Nico will create an API
+- Run audit in chrome and try to understand it and address it
+- Add a doggy daycare video from youtube to the page.
+- Make the phone and email links open the email and the phone for real.
+
+
+All of the above are: research and ask questions to Nico.
+
+
+TIPS FOR GALLERY
+
+- Add all the imgs to the html, all hidden
+- When the script starts read all the img of the gallery => put them in an Array with querySelectorAll
+- When the script starts remove the hidden class from the first pic in the Array
+- When user click  right arrow => go to your array and move to the right of the visible pic
+-- Keep and index ( that starts from zero ) for what picture you are at
+-- right means => index +1
+-- left means => index -1
+-- take care that index can go 'outside' of the array, you need to solve this( if you have 3 img and index start from 0 and the user click left, index should be 3)
+-- after updating index change visibility of the img
+--- Bonus points if you can add a css transition =>  https://css-tricks.com/almanac/properties/t/transition/
+*/
