@@ -381,6 +381,42 @@ button {
     border-radius: 2.5rem;
 }
 
+.slideshow{
+    z-index:3;
+    display:flex;
+    position:absolute;
+}
+
+.prev, .next{
+    width: auto;
+    padding: 1rem;
+    color:white;
+    font-weight: bold;
+    border-radius: 0 0.5rem 0.5rem 0;
+    bottom: 13rem;
+}
+
+.next{
+    right: 0;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.prev:hover, .next:hover{
+    background-color:rgba(0,0,0,0.8)
+}
+
+.gallery_image{
+    width:53rem;
+    height:30rem;
+}
+
+/** ~~~~~~ IFRAME ~~~~~~ **/
+.iframe_settings{
+    width: 52.83rem;
+    height:30rem;
+    border:none;
+}
+
 /** ~~~~~~~~~~~~CUSTOMERS~~~~~~~~~~~~ **/
 .customer_div {
     display: flex;

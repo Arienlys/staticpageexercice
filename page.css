@@ -49,7 +49,7 @@ body {
   display: flex;
   border-radius: 2.5rem;
   left: 50%;
-  transform: translate(-50%, -55%);
+  transform: translate(-50%, -59%);
   box-shadow: 0rem 1rem 1.5rem rgba(38, 38, 38, 0.2),
     0rem 0.5rem 1rem rgba(38, 38, 38, 0.24);
 }
@@ -104,10 +104,6 @@ a {
   height: 1rem;
   padding: 0;
   align-self: flex-end;
-}
-
-.modal-content{
-  
 }
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~@MEDIA~~~~~~~~~~~~~~~~~~~~~~~ **/

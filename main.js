@@ -96,15 +96,14 @@ aboutModal.addEventListener("click", modifyModal);
 - Bonus: re-implement the gallery using this concepts
 - Nico will create an API
 - Run audit in chrome and try to understand it and address it
-- Add a doggy daycare video from youtube to the page.
-- Make the phone and email links open the email and the phone for real.
+- Add a doggy daycare video from youtube to the page. ((doen with an iframe coming from youtube))
+- Make the phone and email links open the email and the phone for real. ((done with callto: and tel: property))
 
 
 All of the above are: research and ask questions to Nico.
 
 
-TIPS FOR GALLERY
-
+TIPS FOR GALLERY:
 - Add all the imgs to the html, all hidden
 - When the script starts read all the img of the gallery => put them in an Array with querySelectorAll
 - When the script starts remove the hidden class from the first pic in the Array
