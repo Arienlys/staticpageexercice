@@ -91,6 +91,8 @@ header p {
 
 .vertical_align {
   vertical-align: middle;
+  font-size:small;
+  color:#f2726f;
 }
 
 .navbar_right_icons {
