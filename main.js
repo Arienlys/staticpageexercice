@@ -94,14 +94,13 @@ aboutModal.addEventListener("click", modifyModal);
 
 /*  Stuff to do:
 - Bonus: re-implement the gallery using this concepts
-- Nico will create an API
-- Run audit in chrome and try to understand it and address it
+- Nico will create an API ((*cheer cheer*))
+- Run audit in chrome and try to understand it and address it ((adding alt to pictures and meta description.))
 - Add a doggy daycare video from youtube to the page. ((doen with an iframe coming from youtube))
 - Make the phone and email links open the email and the phone for real. ((done with callto: and tel: property))
 
 
 All of the above are: research and ask questions to Nico.
-
 
 TIPS FOR GALLERY:
 - Add all the imgs to the html, all hidden
