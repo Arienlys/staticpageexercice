@@ -74,6 +74,9 @@ a {
   text-decoration: none;
 }
 
+.pointer{
+  cursor: pointer;
+}
 /** ~~~~~~~~~~~~~~~~~~~~~~~POPUP~~~~~~~~~~~~~~~~~~~~~~~ **/
 
 .modal {
@@ -104,6 +107,10 @@ a {
   height: 1rem;
   padding: 0;
   align-self: flex-end;
+}
+
+.visibility{
+  display:none;
 }
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~@MEDIA~~~~~~~~~~~~~~~~~~~~~~~ **/

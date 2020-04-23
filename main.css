@@ -385,6 +385,7 @@ button {
     z-index:3;
     display:flex;
     position:absolute;
+    cursor: pointer;
 }
 
 .prev, .next{
@@ -408,6 +409,11 @@ button {
 .gallery_image{
     width:52.85rem;
     height:30rem;
+}
+
+.hidden{
+    transition-property: opacity, left;
+    transition-duration: 2s, 4s;
 }
 
 /** ~~~~~~ IFRAME ~~~~~~ **/

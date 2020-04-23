@@ -100,8 +100,8 @@ const modifyModal = (event) => {
 
 const aboutModal = window.document.querySelectorAll('[data-modal-trigger="about"]');
 
-for (const a of aboutModal){
-a.addEventListener("click", modifyModal)
+for (const a of aboutModal) {
+  a.addEventListener("click", modifyModal)
 }
 
 /*  Stuff to do:
@@ -115,10 +115,10 @@ a.addEventListener("click", modifyModal)
 All of the above are: research and ask questions to Nico.
 
 TIPS FOR GALLERY:
-- Add all the imgs to the html, all hidden ((done. Adding a special class))
-- When the script starts read all the img of the gallery => put them in an Array with querySelectorAll
-- When the script starts remove the hidden class from the first pic in the Array
-- When user click  right arrow => go to your array and move to the right of the visible pic
+- Add all the imgs to the html, all hidden 
+- When the script starts read all the img of the gallery => put them in an Array with querySelectorAll 
+- When the script starts remove the hidden class from the first pic in the Array 
+- When user click  right arrow => go to your array and move to the right of the visible pic 
 -- Keep and index ( that starts from zero ) for what picture you are at
 -- right means => index +1
 -- left means => index -1
@@ -127,11 +127,42 @@ TIPS FOR GALLERY:
 --- Bonus points if you can add a css transition =>  https://css-tricks.com/almanac/properties/t/transition/
 */
 
+/** ~~~~~~~~~~~ SLIDESHOW GALLERY ~~~~~~~~~~~ **/
+const listImg = window.document.querySelectorAll(".gallery_image");
+const lenght = listImg.length;
+var currentImg = 0;
+listImg[currentImg].classList.remove("visibility");
+
 const changeImg = (event) => {
- 
+  if (event.target.classList == "slideshow next") {
+    listImg[currentImg].classList.add("visibility");
+    listImg[currentImg].classList.remove("hidden");
+
+    currentImg = currentImg + 1;
+    if (currentImg > (listImg.length-1)) {
+      currentImg = 0;
+    }
+
+    listImg[currentImg].classList.remove("visibility");
+    listImg[currentImg].classList.add("hidden");
+  }
+
+  else {
+    listImg[currentImg].classList.add("visibility");
+    listImg[currentImg].classList.remove("hidden");
+
+    currentImg = currentImg - 1;
+    if (currentImg < 0) {
+      currentImg = listImg.length-1;
+    }
+    
+    listImg[currentImg].classList.remove("visibility");
+    listImg[currentImg].classList.add("hidden");
+  }
 };
 
-const listImg = window.document.querySelectorAll(".gallery_image");
-const slideshow = window.document.querySelectorAll("slideshow");
+const slideshow = window.document.querySelectorAll(".slideshow");
+for (const slide of slideshow) {
+  slide.addEventListener("click", changeImg);
+}
 
-slideshow.addEventListener("click", changeImg);

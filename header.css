@@ -7,6 +7,10 @@ header p {
   margin-top: 0;
 }
 
+header a:hover {
+  background-color: transparent;
+}
+
 .header {
   position: absolute;
   width: 76%;
@@ -117,10 +121,6 @@ nav button {
 .dropdown {
   float: left;
   overflow: hidden;
-}
-
-.visibility{
-  display:none;
 }
 
 .dropdown .dropbtn {
