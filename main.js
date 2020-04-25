@@ -131,34 +131,26 @@ TIPS FOR GALLERY:
 const listImg = window.document.querySelectorAll(".gallery_image");
 const lenght = listImg.length;
 var currentImg = 0;
-listImg[currentImg].classList.remove("visibility");
+listImg[currentImg].classList.remove("hidden");
 
 const changeImg = (event) => {
-  if (event.target.classList == "slideshow next") {
-    listImg[currentImg].classList.add("visibility");
-    listImg[currentImg].classList.remove("hidden");
+  listImg[currentImg].classList.toggle("hidden");
 
+  if (event.target.classList == "slideshow next") {
+    
     currentImg = currentImg + 1;
     if (currentImg > (listImg.length-1)) {
       currentImg = 0;
     }
-
-    listImg[currentImg].classList.remove("visibility");
-    listImg[currentImg].classList.add("hidden");
   }
 
   else {
-    listImg[currentImg].classList.add("visibility");
-    listImg[currentImg].classList.remove("hidden");
-
     currentImg = currentImg - 1;
     if (currentImg < 0) {
       currentImg = listImg.length-1;
-    }
-    
-    listImg[currentImg].classList.remove("visibility");
-    listImg[currentImg].classList.add("hidden");
+    };
   }
+  listImg[currentImg].classList.remove("hidden");
 };
 
 const slideshow = window.document.querySelectorAll(".slideshow");

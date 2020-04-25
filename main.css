@@ -350,6 +350,7 @@ button {
 }
 
 .tabs .tab {
+    position:relative;
     order: 99;
     flex-grow: 1;
     width: 100%;
@@ -377,7 +378,7 @@ button {
 
 /** ~~~~~~PICTURES~~~~~~ **/
 .doggy2 {
-    top: 88%;
+    top: 900%;
     border-radius: 2.5rem;
 }
 
@@ -406,14 +407,20 @@ button {
     background-color:rgba(0,0,0,0.8)
 }
 
-.gallery_image{
+.gallery_div{
     width:52.85rem;
     height:30rem;
 }
 
+.gallery_image{
+    position:absolute;
+    border-radius: 2.5rem;
+    opacity: 1;
+    transition: all 1s;
+}
+
 .hidden{
-    transition-property: opacity, left;
-    transition-duration: 2s, 4s;
+    opacity: 0;
 }
 
 /** ~~~~~~ IFRAME ~~~~~~ **/
