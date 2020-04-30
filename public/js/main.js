@@ -225,5 +225,5 @@ form.addEventListener("submit", (event) => {
  - Bonus: Add a dialog with a login form.( no need to connect it to the API we will do this together later)
  - Bonus: play more with css transition and experiment with all the property that you can modify.
 
- Notes: from now on you need to pay attention to be DRY => Do not Repeat Yourself 
+ Notes: from now on you need to pay attention to be DRY => Do not Repeat Yourself
 */
