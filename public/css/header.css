@@ -57,7 +57,7 @@ header a:hover {
   position: absolute;
   top: 0;
   z-index: -2;
-  background-image: url("./images/headerback.png");
+  background-image: url("../images/headerback.png");
   background-position-x: center;
   background-size: cover;
   height: 50rem;
@@ -95,8 +95,8 @@ header a:hover {
 
 .vertical_align {
   vertical-align: middle;
-  font-size:small;
-  color:#f2726f;
+  font-size: small;
+  color: #f2726f;
 }
 
 .navbar_right_icons {
@@ -140,7 +140,7 @@ nav button {
 }
 
 .dropdown-content {
-  display:block;
+  display: block;
   position: absolute;
   background-color: white;
   min-width: 10rem;

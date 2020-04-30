@@ -48,7 +48,6 @@ const openModal = (e) => {
   const modal = window.document.querySelector(selector);
   modal.classList.remove("visibility");
   modal.classList.add("modal");
-
 };
 
 // Add event to trigger modals
@@ -83,14 +82,14 @@ for (const item of closeButton) {
 // Change this to 'change the html' WHen the popup is opened -> When the user click on the second about the text is already the 'new' one
 /** ~~~~~~~~~~~ CHANGING THE HTML ~~~~~~~~~~~ **/
 const modifyModal = (event) => {
-  const aboutContent = window.document.querySelector('[data-modal="about"] .modal-content');
+  const aboutContent = window.document.querySelector(
+    '[data-modal="about"] .modal-content'
+  );
   const newElement = document.createElement("p");
 
   if (event.target.classList == "navbar_title") {
     newElement.innerHTML = "My awesome popup";
-  }
-
-  else {
+  } else {
     newElement.innerHTML = "You! Yes you! You're Awesome :D!";
   }
 
@@ -98,10 +97,12 @@ const modifyModal = (event) => {
   aboutContent.appendChild(newElement);
 };
 
-const aboutModal = window.document.querySelectorAll('[data-modal-trigger="about"]');
+const aboutModal = window.document.querySelectorAll(
+  '[data-modal-trigger="about"]'
+);
 
 for (const a of aboutModal) {
-  a.addEventListener("click", modifyModal)
+  a.addEventListener("click", modifyModal);
 }
 
 /*  Stuff to do:
@@ -115,10 +116,10 @@ for (const a of aboutModal) {
 All of the above are: research and ask questions to Nico.
 
 TIPS FOR GALLERY:
-- Add all the imgs to the html, all hidden 
-- When the script starts read all the img of the gallery => put them in an Array with querySelectorAll 
-- When the script starts remove the hidden class from the first pic in the Array 
-- When user click  right arrow => go to your array and move to the right of the visible pic 
+- Add all the imgs to the html, all hidden
+- When the script starts read all the img of the gallery => put them in an Array with querySelectorAll
+- When the script starts remove the hidden class from the first pic in the Array
+- When user click  right arrow => go to your array and move to the right of the visible pic
 -- Keep and index ( that starts from zero ) for what picture you are at
 -- right means => index +1
 -- left means => index -1
@@ -129,32 +130,100 @@ TIPS FOR GALLERY:
 
 /** ~~~~~~~~~~~ SLIDESHOW GALLERY ~~~~~~~~~~~ **/
 const listImg = window.document.querySelectorAll(".gallery_image");
-const lenght = listImg.length;
-var currentImg = 0;
+const length = listImg.length;
+
+let currentImg = 0;
+
 listImg[currentImg].classList.remove("hidden");
 
 const changeImg = (event) => {
   listImg[currentImg].classList.toggle("hidden");
 
   if (event.target.classList == "slideshow next") {
-    
     currentImg = currentImg + 1;
-    if (currentImg > (listImg.length-1)) {
+    if (currentImg > listImg.length - 1) {
       currentImg = 0;
     }
-  }
-
-  else {
+  } else {
     currentImg = currentImg - 1;
     if (currentImg < 0) {
-      currentImg = listImg.length-1;
-    };
+      currentImg = listImg.length - 1;
+    }
   }
   listImg[currentImg].classList.remove("hidden");
 };
 
 const slideshow = window.document.querySelectorAll(".slideshow");
 for (const slide of slideshow) {
-  slide.addEventListener("click", changeImg);
+  slide.addEventListener("click", () => changeImg("right"));
 }
 
+// EVALUATION
+
+// const changeImg2 = (isNext) => {
+//   listImg[currentImg].classList.toggle("hidden");
+
+//   if (isNext) {
+//     currentImg = currentImg + 1;
+//     if (currentImg > listImg.length - 1) {
+//       currentImg = 0;
+//     }
+//   } else {
+//     currentImg = currentImg - 1;
+//     if (currentImg < 0) {
+//       currentImg = listImg.length - 1;
+//     }
+//   }
+//   listImg[currentImg].classList.remove("hidden");
+// };
+
+// const changeImg3 = (isRight) => {
+//   changeImg2(isRight);
+// };
+
+// const leftArrow = window.document.querySelector(".gallery .left");
+
+// leftArrow.addEventListener("click", () => changeImg2(false));
+
+// const rightArrow = window.document.querySelector(".gallery .right");
+
+// rightArrow.addEventListener("click", () => changeImg2(true));
+
+//  Grabbing data from the form
+
+async function postData(url = "", data = {}) {
+  // Default options are marked with *
+  const response = await fetch(url, {
+    method: "POST", // *GET, POST, PUT, DELETE, etc.
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data), // body data type must match "Content-Type" header
+  });
+  return response.json(); // parses JSON response into native JavaScript objects
+}
+
+const form = window.document.querySelector("#Appointment form");
+
+console.log(form);
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  for (var pair of formData.entries()) {
+    console.log(pair[0] + ", " + pair[1]);
+  }
+  postData("/api/appointment/", { answer: 42 }).then((data) => {
+    console.log(data); // JSON data parsed by `response.json()` call
+  });
+});
+
+/*  Stuff to do:
+ - Extract the data from `formData` and send it correctly to the API
+ - Read the  API response and count how many appointments are in the system => Add this to the page under or above the form  HINT: use innerHTML
+ - Implement a confirmation dialog before sending the form => HINT search for `javascript confirmation alert`
+ - Bonus: Add a dialog with a login form.( no need to connect it to the API we will do this together later)
+ - Bonus: play more with css transition and experiment with all the property that you can modify.
+
+ Notes: from now on you need to pay attention to be DRY => Do not Repeat Yourself 
+*/

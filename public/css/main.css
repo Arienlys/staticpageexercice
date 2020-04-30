@@ -3,539 +3,543 @@
   height: calc(100vh - 20rem);
 }*/
 .main_text {
-    font-family: Roboto;
-    font-style: normal;
-    line-height: 1.5rem;
+  font-family: Roboto;
+  font-style: normal;
+  line-height: 1.5rem;
 }
 
 .text_color {
-    color: white;
+  color: white;
 }
 
 .text_alternate_color {
-    color: #5D62B5;
+  color: #5d62b5;
 }
 
 .text_red {
-    color: #F2726F;
+  color: #f2726f;
 }
 
 .title_size {
-    width: 60%;
+  width: 60%;
 }
 
 .main_section_name {
-    font-weight: bold;
-    font-size: 12px;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
 }
 
 .main_section_title {
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 2.5rem;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 2.5rem;
 }
 
 .main_section_text {
-    font-weight: normal;
-    font-size: 16px;
-    letter-spacing: 0.15px;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.15px;
 }
 
 .main_subtitle {
-    font-weight: 900;
-    font-size: 19px;
-    line-height: 1.3rem;
-    color: #F2726F;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 1.3rem;
+  color: #f2726f;
 }
 
 button {
-    background: transparent;
-    border: none;
-    z-index: 2;
-    text-transform: uppercase;
+  background: transparent;
+  border: none;
+  z-index: 2;
+  text-transform: uppercase;
 }
 
 /** ~~~~~~~~~~~~JUMBOTRON~~~~~~~~~~~~ **/
 .jumbotron {
-    margin: 7rem 14%;
-    height: 21rem;
-    width: 40rem;
+  margin: 7rem 14%;
+  height: 21rem;
+  width: 40rem;
 }
 
 .jumbotron_text {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 56px;
-    line-height: 100%;
-    color: #FFFFFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 100%;
+  color: #ffffff;
 }
 
 /** ~~~~~~~~~~~~ABOUT~~~~~~~~~~~~ **/
 .about {
-    background-image: url("./images/Blob2.png");
-
+  background-image: url("../images/Blob2.png");
 }
 
 .circles {
-    position: absolute;
-    top: -6.5rem;
-    right: -4.5rem;
+  position: absolute;
+  top: -6.5rem;
+  right: -4.5rem;
 }
 
 .abouttxt {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1.5rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5rem;
 }
 
 .doggy1 {
-    top: 95%;
+  top: 95%;
 }
 
 /** ~~~~~~~~~~~~PROMISES~~~~~~~~~~~~ **/
 .three_cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .div_three_parts {
-    margin: 18rem 14% 0 14%;
+  margin: 18rem 14% 0 14%;
 }
 
 .single_part {
-    display: flex;
-    width: 30%
+  display: flex;
+  width: 30%;
 }
 
 .parts_picture {
-    height: 4rem;
-    margin-right: 1.4rem;
-    margin-top: 1rem;
+  height: 4rem;
+  margin-right: 1.4rem;
+  margin-top: 1rem;
 }
 
 /** ~~~~~~~~~~~~VIDEO~~~~~~~~~~~~ **/
 .second_doggy_ban {
-    display: flex;
-    margin: 7rem 0;
-    height: 31.25rem;
-    z-index: -1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-image: url("./images/doggy2.png");
+  display: flex;
+  margin: 7rem 0;
+  height: 31.25rem;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-image: url("./images/doggy2.png");
 }
 
 .text_ban {
-    width: 25rem;
-    margin-top: 6%;
-    margin-left: 55%;
+  width: 25rem;
+  margin-top: 6%;
+  margin-left: 55%;
 }
 
 .wblob {
-    z-index: -2;
-    position: absolute;
-    right: 0;
-
+  z-index: -2;
+  position: absolute;
+  right: 0;
 }
 
 /** ~~~~~~~~~~~~SERVICES~~~~~~~~~~~~ **/
 .services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 3rem;
-    margin-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
 .service_card {
-    margin-bottom: 1.5rem;
-    flex-direction: column;
+  margin-bottom: 1.5rem;
+  flex-direction: column;
 }
 
 .service_picture {
-    width: 3.5rem;
+  width: 3.5rem;
 }
 
 .service_title {
-    margin: 1.5rem auto;
+  margin: 1.5rem auto;
 }
 
 .margin_picture {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .service_text {
-    width: 13rem;
+  width: 13rem;
 }
 
 .service_button {
-    width: 7.75rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5rem;
+  width: 7.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
 }
 
 /** ~~~~~~~~~~~~SECOND BANNER~~~~~~~~~~~~ **/
 .second_banner {
-    position: absolute;
-    height: 980px;
-    width: 100%;
-    background-position: bottom;
-    background-position-x: right;
-    background-image: url("./images/doggy3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
+  position: absolute;
+  height: 980px;
+  width: 100%;
+  background-position: bottom;
+  background-position-x: right;
+  background-image: url("./images/doggy3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
 .form_on_banner {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .form_base {
-    margin-top: 7rem;
-    width: 36.5rem;
-    background: #5D62B5;
-    border-radius: 2.5rem;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 3.4rem;
-    z-index: 5;
+  margin-top: 7rem;
+  width: 36.5rem;
+  background: #5d62b5;
+  border-radius: 2.5rem;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 3.4rem;
+  z-index: 5;
 }
 
 .form_input {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .form_justify {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .form_left_title {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10%;
-    box-sizing: border-box;
-    padding: 3.1rem;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  box-sizing: border-box;
+  padding: 3.1rem;
 }
 
 .input {
-    width: 13.75rem;
-    height: 3rem;
-    background: transparent;
-    border: 2px solid white;
-    border-radius: 1rem;
-    margin-bottom: 2rem;
+  width: 13.75rem;
+  height: 3rem;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
 }
 
 .select {
-    padding: 0 1.3rem;
-    color: white;
-    width: 14rem;
-    height: 3.38rem;
+  padding: 0 1.3rem;
+  color: white;
+  width: 14rem;
+  height: 3.38rem;
 }
 
 .label {
-    display: none;
+  display: none;
 }
 
 .option {
-    background: #5D62B5;
-    border: none;
-    line-height: 1.5rem;
+  background: #5d62b5;
+  border: none;
+  line-height: 1.5rem;
 }
 
 .input::placeholder {
-    color: white;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.5rem;
-    letter-spacing: 0.15px;
-    padding: 1.4rem;
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5rem;
+  letter-spacing: 0.15px;
+  padding: 1.4rem;
 }
 
 .input_text_area {
-    width: 29rem;
-    height: 11.25rem;
+  width: 29rem;
+  height: 11.25rem;
 }
 
 .button_form {
-    width: auto;
-    margin-left: 55%;
+  width: auto;
+  margin-left: 55%;
 }
 
 .relative {
-    position: relative;
-    display: flex;
+  position: relative;
+  display: flex;
 }
 
 .form_blob {
-    position: absolute;
-    top: 10rem;
-    left: -10.5rem;
-    width: 750px;
-    height: 725px;
-    z-index: 3;
+  position: absolute;
+  top: 10rem;
+  left: -10.5rem;
+  width: 750px;
+  height: 725px;
+  z-index: 3;
 }
 
 .form_circles {
-    position: absolute;
-    left: -5.6rem;
-    bottom: -2rem;
+  position: absolute;
+  left: -5.6rem;
+  bottom: -2rem;
 }
 
 .stat_title {
-    font-size: 2rem;
-    line-height: 2.25rem;
+  font-size: 2rem;
+  line-height: 2.25rem;
 }
 
 .stat_number {
-    font-size: 96px;
-    line-height: 0.3rem;
-    display: flex;
-    align-items: center;
+  font-size: 96px;
+  line-height: 0.3rem;
+  display: flex;
+  align-items: center;
 }
 
 .stat_customer {
-    font-size: 19px;
-    line-height: 1.4rem;
+  font-size: 19px;
+  line-height: 1.4rem;
 }
 
 .stat_text {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
 }
 
 .wblob2 {
-    z-index: -2;
-    position: absolute;
-    left: 0;
-    margin-top: 55%;
+  z-index: -2;
+  position: absolute;
+  left: 0;
+  margin-top: 55%;
 }
 
 /** ~~~~~~~~~~~~GALLERY & STREAM~~~~~~~~~~~~ **/
 .gallery_margin {
-    margin-top: 10rem;
+  margin-top: 10rem;
 }
 
 /** ~~~~~~TABS~~~~~~ **/
 .tabs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tabs label {
-    order: 1;
-    display: block;
-    padding: 1rem 2rem;
-    cursor: pointer;
-    background: none;
-    border-bottom: 1px solid grey;
-    font-weight: normal;
-    transition: ease 0.2s;
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background: none;
+  border-bottom: 1px solid grey;
+  font-weight: normal;
+  transition: ease 0.2s;
 }
 
 .tabs .tab {
-    position:relative;
-    order: 99;
-    flex-grow: 1;
-    width: 100%;
-    display: none;
-    padding: 1rem;
-    margin-top: 2rem;
-    background: none;
+  position: relative;
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: none;
 }
 
 .tabs input[type="radio"] {
-    display: none;
+  display: none;
 }
 
-.tabs input[type="radio"]:checked+label {
-    border-bottom: 4px solid white;
+.tabs input[type="radio"]:checked + label {
+  border-bottom: 4px solid white;
 }
 
-.tabs input[type="radio"]:hover+label {
-    border-bottom: 4px solid white;
+.tabs input[type="radio"]:hover + label {
+  border-bottom: 4px solid white;
 }
 
-.tabs input[type="radio"]:checked+label+.tab {
-    display: block;
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
 }
 
 /** ~~~~~~PICTURES~~~~~~ **/
 .doggy2 {
-    top: 900%;
-    border-radius: 2.5rem;
+  top: 900%;
+  border-radius: 2.5rem;
 }
 
-.slideshow{
-    z-index:3;
-    display:flex;
-    position:absolute;
-    cursor: pointer;
+.slideshow {
+  z-index: 3;
+  display: flex;
+  position: absolute;
+  cursor: pointer;
 }
 
-.prev, .next{
-    width: auto;
-    padding: 1rem;
-    color:white;
-    font-weight: bold;
-    border-radius: 0 0.5rem 0.5rem 0;
-    bottom: 13rem;
+.prev,
+.next {
+  width: auto;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 0.5rem 0.5rem 0;
+  bottom: 13rem;
 }
 
-.next{
-    right: 0;
-    border-radius: 0.5rem 0 0 0.5rem;
+.next {
+  right: 0;
+  border-radius: 0.5rem 0 0 0.5rem;
 }
 
-.prev:hover, .next:hover{
-    background-color:rgba(0,0,0,0.8)
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.gallery_div{
-    width:52.85rem;
-    height:30rem;
+.gallery_div {
+  width: 52.85rem;
+  height: 30rem;
 }
 
-.gallery_image{
-    position:absolute;
-    border-radius: 2.5rem;
-    opacity: 1;
-    transition: all 1s;
+.gallery_image {
+  position: absolute;
+  border-radius: 2.5rem;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  transition: all 1s;
 }
 
-.hidden{
-    opacity: 0;
+.hidden {
+  width: 0;
+  height: 0;
+  opacity: 0;
 }
 
 /** ~~~~~~ IFRAME ~~~~~~ **/
-.iframe_settings{
-    width: 52.83rem;
-    height:30rem;
-    border:none;
+.iframe_settings {
+  width: 52.83rem;
+  height: 30rem;
+  border: none;
 }
 
 /** ~~~~~~~~~~~~CUSTOMERS~~~~~~~~~~~~ **/
 .customer_div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 15rem 14% 10rem 14%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15rem 14% 10rem 14%;
 }
 
 .customer_title {
-    width: 30%;
+  width: 30%;
 }
 
 .customer_card {
-    flex-wrap: wrap;
-    padding: 2rem;
-    justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: flex-start;
 }
 
 .customer_picture {
-    width: 2.8rem;
-    height: 2.8rem;
-    margin-top: 0.3rem;
-    margin-right: 1rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-top: 0.3rem;
+  margin-right: 1rem;
 }
 
 .customer_justify {
-    text-align: justify;
+  text-align: justify;
 }
 
 /** ~~~~~~~~~~~~STATS~~~~~~~~~~~~ **/
 .stats {
-    background-color: #29C3BE;
-    width: 100%;
-    padding-bottom: 13rem;
+  background-color: #29c3be;
+  width: 100%;
+  padding-bottom: 13rem;
 }
 
 .impact {
-    position: relative;
-    padding-top: 6rem;
+  position: relative;
+  padding-top: 6rem;
 }
 
 .doggy5 {
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    top: -5rem;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: -5rem;
 }
 
 .green_blob {
-    position: absolute;
-    right: -5.5rem;
-    top: 0;
+  position: absolute;
+  right: -5.5rem;
+  top: 0;
 }
 
 .stats_icons {
-    width: 4.75rem;
-    height: 4.75rem;
+  width: 4.75rem;
+  height: 4.75rem;
 }
 
 .stats_numbers {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 4rem;
 }
 
 .stats_title {
-    width: 25rem;
+  width: 25rem;
 }
 
 .stats_totals {
-    height: 4.75rem;
-    width: 11rem;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 1rem;
+  height: 4.75rem;
+  width: 11rem;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .stats_margin {
-    margin: 0;
+  margin: 0;
 }
 
 /** ~~~~~~~~~~~~LAST PURPLE BANNER~~~~~~~~~~~~ **/
 .purple_banner {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: #5D62B5;
-    padding: 3rem 4rem;
-    border-radius: 2.5rem;
-    bottom: -18rem;
-    width:100%;
-    justify-content: space-between;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #5d62b5;
+  padding: 3rem 4rem;
+  border-radius: 2.5rem;
+  bottom: -18rem;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .last_text {
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 30px;
-    width: 60%;
-    margin: 0;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  width: 60%;
+  margin: 0;
 }
 
 /** ~~~~~~~~~~~~~~~~~~~~~~~POPUP~~~~~~~~~~~~~~~~~~~~~~~
@@ -591,164 +595,166 @@ button {
     overflow: auto;
 } **/
 
-
 /** ~~~~~~~~~~~~~~~~~~~~~~~@MEDIA~~~~~~~~~~~~~~~~~~~~~~~ **/
 /** ~~~~~~~~~~~~< 800PX~~~~~~~~~~~~ **/
 @media screen and (max-width: 800px) {
+  /** ~~~~~~~~~~~Jumbotron~~~~~~~~~~~ **/
+  .jumbotron {
+    width: auto;
+  }
 
-    /** ~~~~~~~~~~~Jumbotron~~~~~~~~~~~ **/
-    .jumbotron {
-        width: auto;
-    }
+  /** ~~~~~~~~~~~About~~~~~~~~~~~ **/
+  .about {
+    background-image: none;
+  }
 
-    /** ~~~~~~~~~~~About~~~~~~~~~~~ **/
-    .about{
-        background-image: none;
-    }
+  /** ~~~~~~~~~~~First Doggy picture~~~~~~~~~~~ **/
+  .doggy {
+    width: 100%;
+  }
 
-    /** ~~~~~~~~~~~First Doggy picture~~~~~~~~~~~ **/
-    .doggy{
-        width:100%;
-    }
+  /** ~~~~~~~~~~~Second Banner~~~~~~~~~~~ **/
+  .second_doggy_ban {
+    text-align: right;
+    justify-content: flex-end;
+  }
 
-    /** ~~~~~~~~~~~Second Banner~~~~~~~~~~~ **/
-    .second_doggy_ban{
-        text-align:right;
-        justify-content: flex-end;
-    }
+  .text_ban {
+    width: 20rem;
+    margin: auto 0;
+  }
+  /** ~~~~~~~~~~~Services~~~~~~~~~~~ **/
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
 
-    .text_ban{
-        width:20rem;
-        margin: auto 0;
-    }
-    /** ~~~~~~~~~~~Services~~~~~~~~~~~ **/
-    .services{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        flex-wrap: wrap;
-        margin-top: 3rem;
-        margin-bottom: 4rem;
-    }
+  /** ~~~~~~~~~~~Form~~~~~~~~~~~ **/
+  .second_banner {
+    height: 90rem;
+  }
 
-    /** ~~~~~~~~~~~Form~~~~~~~~~~~ **/
-    .second_banner{
-        height:90rem;
-    }
+  /** ~~~~~~~~~~~Form~~~~~~~~~~~ **/
+  .form_blob,
+  .form_circles,
+  .wblob2,
+  .green_blob,
+  .circles {
+    display: none;
+  }
 
-    /** ~~~~~~~~~~~Form~~~~~~~~~~~ **/
-    .form_blob, .form_circles, .wblob2, .green_blob, .circles{
-        display:none;
-    }
+  .form_base {
+    margin-top: 5rem;
+    width: auto;
+  }
 
-    .form_base{
-        margin-top:5rem;
-        width:auto;
-    }
+  .form_input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: unset;
+  }
 
-    .form_input{
-        display:flex;
-        flex-direction: column;
-        flex-wrap: unset;
-    }
+  .input,
+  .select,
+  .input_text_area {
+    width: 100%;
+  }
 
-    .input, .select, .input_text_area{
-        width:100%;
-    }
+  .form_left_title {
+    width: unset;
+    margin-top: 0;
+  }
 
-    .form_left_title{
-        width:unset;
-        margin-top:0;
-    }
+  .form_left_title .stat_number {
+    margin-block-start: 3rem;
+    margin-block-end: 3rem;
+  }
 
-    .form_left_title .stat_number{
-        margin-block-start: 3rem;
-        margin-block-end: 3rem;
-    }
+  .relative {
+    margin: 2rem auto 0 auto;
+  }
 
-    .relative{
-        margin: 2rem auto 0 auto;
-    }
+  /** ~~~~~~~~~~~Promises~~~~~~~~~~~ **/
+  .gallery_margin {
+    margin-top: 5rem;
+  }
 
-    /** ~~~~~~~~~~~Promises~~~~~~~~~~~ **/
-    .gallery_margin{
-        margin-top: 5rem;
-    }
+  /** ~~~~~~~~~~~Promises~~~~~~~~~~~ **/
+  .div_three_parts {
+    margin: 10rem 0 0 0;
+  }
 
-    /** ~~~~~~~~~~~Promises~~~~~~~~~~~ **/
-    .div_three_parts {
-        margin: 10rem 0 0 0;
-    }
+  .single_part {
+    display: flex;
+    width: auto;
+  }
 
-    .single_part {
-        display: flex;
-        width: auto;
-    }
+  /** ~~~~~~~~~~~Customer~~~~~~~~~~~ **/
+  .customer_title {
+    width: 100%;
+    text-align: center;
+  }
 
-    /** ~~~~~~~~~~~Customer~~~~~~~~~~~ **/
-    .customer_title{
-        width:100%;
-        text-align: center;
-    }
+  .customer_div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10rem 0 10rem 0;
+    align-items: center;
+  }
 
-    .customer_div {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 10rem 0 10rem 0;
-        align-items: center;
-    }
+  .customer_card {
+    margin-bottom: 3rem;
+  }
 
-    .customer_card{
-        margin-bottom:3rem;
-    }
+  /** ~~~~~~~~~~~Impact~~~~~~~~~~~ **/
+  .doggy5 {
+    width: 50%;
+  }
 
-    /** ~~~~~~~~~~~Impact~~~~~~~~~~~ **/
-    .doggy5{
-        width:50%;
-    }
+  .stats_totals {
+    margin: 0 2rem 1rem 2rem;
+  }
 
-    .stats_totals{
-        margin: 0 2rem 1rem 2rem;
-    }
+  /** ~~~~~~~~~~~Stats~~~~~~~~~~~ **/
+  .stats_title {
+    width: unset;
+  }
 
-    /** ~~~~~~~~~~~Stats~~~~~~~~~~~ **/
-    .stats_title{
-        width:unset;
-    }
+  /** ~~~~~~~~~~~Purple Banner~~~~~~~~~~~ **/
+  .purple_banner {
+    width: auto;
+    padding: 1rem 1rem;
+  }
 
-    /** ~~~~~~~~~~~Purple Banner~~~~~~~~~~~ **/
-    .purple_banner{
-        width:auto;
-        padding:1rem 1rem;
-    }
+  .purple_banner p {
+    margin-bottom: 1rem;
+  }
 
-    .purple_banner p{
-        margin-bottom:1rem;
-    }
-
-    .last_text{
-        width:100%;
-    }
+  .last_text {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 300px) {
-
-    .form_base{
-        padding:0;
-    }
-
-    .input{
-        width:auto;
-    }
-    
-    .red_button{
-        padding:0;
-    }
-
-    .card{
-        width:auto;
-    }
-
+  .form_base {
+    padding: 0;
   }
+
+  .input {
+    width: auto;
+  }
+
+  .red_button {
+    padding: 0;
+  }
+
+  .card {
+    width: auto;
+  }
+}
