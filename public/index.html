@@ -33,8 +33,28 @@
       </div>
     </div>
   </div>
-
   <!---- end of the modals ---->
+
+  <!---- login dialog ---->
+  <dialog data-modal="login">
+    <form method="dialog" class="login-form">
+      <span class="label">Login</span>
+      <label>
+        <input class="input" type="text" name="login" placeholder="login" />
+      </label>
+      <span class="label">Password</span>
+      <label>
+        <input class="input" type="email" name="password" placeholder="password" />
+      </label>
+      <menu>
+        <button>Confirmer</button>
+        <button class="modal-button">Annuler</button>      
+      </menu>
+    </form>
+  </dialog>
+  <!---- end of the dialog ---->
+
+
   <header>
     <div class="header page_margin">
       <a href="#"><img class="header_logo" src="./images/logo.png" alt="Top icon" /></a>
@@ -59,7 +79,7 @@
 
         <div class="red_button">
           <button type="submit">
-            <a class="info_text" href="#appointement">Make an appointment</a>
+            <a class="info_text" href="#" data-modal-trigger="login">Login</a>
           </button>
         </div>
       </div>
@@ -288,20 +308,20 @@
           </p>
           <form>
             <div class="form_input form_justify">
+              <span class="label">Your name</span>
               <label>
-                <span class="label">Your name</span>
                 <input class="input" type="text" name="name" placeholder="name" required />
               </label>
+              <span class="label">Your email</span>
               <label>
-                <span class="label">Your email</span>
                 <input class="input" type="email" name="email" placeholder="E-mail" required />
               </label>
+              <span class="label"> Your phone</span>
               <label>
-                <span class="label"> Your phone</span>
                 <input class="input" type="text" name="phone" placeholder="Phone Number" required />
               </label>
+              <span class="label">Select a service</span>
               <label>
-                <span class="label">Select a service</span>
                 <select class="input select" name="service">
                   <option class="option" value="0">Select Service</option>
                   <option class="option" value="1">Pet Boarding</option>
@@ -323,6 +343,7 @@
                 Make an appointment
               </button>
             </div>
+            <p class="text_color"></p>
           </form>
         </div>
         <img class="form_blob" src="./images/Blob.png" alt="blob decoration" />

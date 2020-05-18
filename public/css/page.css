@@ -77,8 +77,9 @@ a {
 .pointer{
   cursor: pointer;
 }
-/** ~~~~~~~~~~~~~~~~~~~~~~~POPUP~~~~~~~~~~~~~~~~~~~~~~~ **/
 
+/** ~~~~~~~~~~~~~~~~~~~~~~~POPUP~~~~~~~~~~~~~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~~MODAL~~~~~~~~~~~~ **/
 .modal {
   display: flex;
   justify-content: center;
@@ -107,6 +108,17 @@ a {
   height: 1rem;
   padding: 0;
   align-self: flex-end;
+}
+
+/** ~~~~~~~~~~~~DIALOG~~~~~~~~~~~~ **/
+.login-form{
+  background-color: #5d62b5;
+  width: 25rem;
+  height: 25rem;
+  text-align: center;
+  padding-top: 5rem;
+  box-sizing: border-box;
+  border-radius: 1.5rem;
 }
 
 .visibility{

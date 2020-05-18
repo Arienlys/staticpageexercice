@@ -6,7 +6,7 @@ const jumboTron = window.document.querySelector(".jumbotron");
 const modifyJumboTronText = () => {
   const heading = document.createElement("h1");
   heading.innerHTML = "I am the new JUMBOTRON";
-  //  ThiS is very powerfull because is 'nukes' everything inside
+  //  This is very powerfull because is 'nukes' everything inside
   jumboTron.innerHTML = "";
   jumboTron.appendChild(heading);
 };
@@ -15,18 +15,18 @@ const modifyJumboTronText = () => {
 const headerEventClickHandler = (event) => {
   event.preventDefault();
 
-  /** ~~~~~~~~~~~~~~~~~~~~~~~ MODIFYING CLASSES ~~~~~~~~~~~~~~~~~~~~~~~ **/
+  /** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MODIFYING CLASSES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **/
   navbar.classList.toggle("red-navbar");
 
   //we can call a function like this
   modifyJumboTronText();
 };
 
-/** ~~~~~~~~~~~~~~~~~~~~~~~ ADDING EVENTS ~~~~~~~~~~~~~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ADDING EVENTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **/
 headerLogo.addEventListener("click", headerEventClickHandler);
 
-/** ~~~~~~~~~~~~~~~~~~~~~~~ EXERCISES ~~~~~~~~~~~~~~~~~~~~~~~ **/
-/** ~~~~~~~~~~~ DROPDOWN ~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ EXERCISES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~~~~~~~~~~~~~ DROPDOWN ~~~~~~~~~~~~~~~~~~~~~~~ **/
 /* Use querySelector and click events and classList to re-implement the dropdowns */
 const buttonNavbar = window.document.querySelectorAll("nav .dropdown");
 
@@ -40,7 +40,7 @@ for (const button of buttonNavbar) {
   button.addEventListener("click", openDropDown);
 }
 
-/** ~~~~~~~~~~~ MODAL ~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~~~~~~~~~~~~~ MODAL ~~~~~~~~~~~~~~~~~~~~~~~ **/
 /** ~~~~~ TRIGGER OF THE MODALS ~~~~~ **/
 const openModal = (e) => {
   const { modalTrigger } = e.target.dataset;
@@ -80,7 +80,7 @@ for (const item of closeButton) {
 }
 
 // Change this to 'change the html' WHen the popup is opened -> When the user click on the second about the text is already the 'new' one
-/** ~~~~~~~~~~~ CHANGING THE HTML ~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~~~~~~~~~~~~~ CHANGING THE HTML ~~~~~~~~~~~~~~~~~~~~~~~ **/
 const modifyModal = (event) => {
   const aboutContent = window.document.querySelector(
     '[data-modal="about"] .modal-content'
@@ -111,8 +111,6 @@ for (const a of aboutModal) {
 - Run audit in chrome and try to understand it and address it ((adding alt to pictures and meta description.))
 - Add a doggy daycare video from youtube to the page. ((doen with an iframe coming from youtube))
 - Make the phone and email links open the email and the phone for real. ((done with callto: and tel: property))
-
-
 All of the above are: research and ask questions to Nico.
 
 TIPS FOR GALLERY:
@@ -128,7 +126,7 @@ TIPS FOR GALLERY:
 --- Bonus points if you can add a css transition =>  https://css-tricks.com/almanac/properties/t/transition/
 */
 
-/** ~~~~~~~~~~~ SLIDESHOW GALLERY ~~~~~~~~~~~ **/
+/** ~~~~~~~~~~~~~~~~~~~~~~~ SLIDESHOW GALLERY ~~~~~~~~~~~~~~~~~~~~~~~ **/
 const listImg = window.document.querySelectorAll(".gallery_image");
 const length = listImg.length;
 
@@ -158,6 +156,9 @@ for (const slide of slideshow) {
   slide.addEventListener("click", () => changeImg("right"));
 }
 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // EVALUATION
 
 // const changeImg2 = (isNext) => {
@@ -182,15 +183,15 @@ for (const slide of slideshow) {
 // };
 
 // const leftArrow = window.document.querySelector(".gallery .left");
-
 // leftArrow.addEventListener("click", () => changeImg2(false));
-
 // const rightArrow = window.document.querySelector(".gallery .right");
-
 // rightArrow.addEventListener("click", () => changeImg2(true));
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+
+/** ~~~~~~~~~~~~~~~~~~~~~~~ FORM SENDING AND DATAS ~~~~~~~~~~~~~~~~~~~~~~~ **/
 //  Grabbing data from the form
-
 async function postData(url = "", data = {}) {
   // Default options are marked with *
   const response = await fetch(url, {
@@ -204,26 +205,33 @@ async function postData(url = "", data = {}) {
 }
 
 const form = window.document.querySelector("#Appointment form");
-
+const confirmation = form.querySelector("p");
 console.log(form);
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+  alert("Your form was send successfully! Thank you.");
   const formData = new FormData(form);
   for (var pair of formData.entries()) {
     console.log(pair[0] + ", " + pair[1]);
   }
   postData("/api/appointment/", { answer: 42 }).then((data) => {
     console.log(data); // JSON data parsed by `response.json()` call
+    confirmation.innerHTML = "we received " + data.length + " appointment(s)!";
   });
 });
 
 /*  Stuff to do:
  - Extract the data from `formData` and send it correctly to the API
+      ==> (( The datas are in the console everytime you click on send. i think i'll ask you again about how to do that. ))
  - Read the  API response and count how many appointments are in the system => Add this to the page under or above the form  HINT: use innerHTML
- - Implement a confirmation dialog before sending the form => HINT search for `javascript confirmation alert`
+      ==> (( adding a <p> tag and then changin the html of it! ))
+ - Implement a confirmation dialog before sending the form => HINT search for `javascript confirmation alert` 
+      ==> ((added an alert before the form. Hesitated with the confirm that would change the text and the code. ))
  - Bonus: Add a dialog with a login form.( no need to connect it to the API we will do this together later)
+      ==> (( adding a dialog under the modal. Using the code written to avoid to repeat it. ))
  - Bonus: play more with css transition and experiment with all the property that you can modify.
 
  Notes: from now on you need to pay attention to be DRY => Do not Repeat Yourself
 */
+
