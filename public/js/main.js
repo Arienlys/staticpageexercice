@@ -156,8 +156,6 @@ for (const slide of slideshow) {
   slide.addEventListener("click", () => changeImg("right"));
 }
 
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // EVALUATION
 
@@ -188,8 +186,6 @@ for (const slide of slideshow) {
 // rightArrow.addEventListener("click", () => changeImg2(true));
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
 /** ~~~~~~~~~~~~~~~~~~~~~~~ FORM SENDING AND DATAS ~~~~~~~~~~~~~~~~~~~~~~~ **/
 //  Grabbing data from the form
 async function postData(url = "", data = {}) {
@@ -204,21 +200,29 @@ async function postData(url = "", data = {}) {
   return response.json(); // parses JSON response into native JavaScript objects
 }
 
+// let's use lowercase ID
 const form = window.document.querySelector("#Appointment form");
 const confirmation = form.querySelector("p");
 console.log(form);
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  alert("Your form was send successfully! Thank you.");
-  const formData = new FormData(form);
-  for (var pair of formData.entries()) {
-    console.log(pair[0] + ", " + pair[1]);
+  const confirmed = confirm("Are you sure that you want to submit?");
+  if (confirmed) {
+    const formData = new FormData(form);
+    // let's not mix var with const and let, in general never use var
+    const dataToSend = {};
+    for (var pair of formData.entries()) {
+      dataToSend[pair[0]] = pair[1];
+    }
+    postData("/api/appointment/", dataToSend).then((data) => {
+      console.log(data); // JSON data parsed by `response.json()` call
+      confirmation.innerHTML =
+        "we received " + data.length + " appointment(s)!";
+    });
+  } else {
+    alert("the form has not been submitted");
   }
-  postData("/api/appointment/", { answer: 42 }).then((data) => {
-    console.log(data); // JSON data parsed by `response.json()` call
-    confirmation.innerHTML = "we received " + data.length + " appointment(s)!";
-  });
 });
 
 /*  Stuff to do:
@@ -226,7 +230,7 @@ form.addEventListener("submit", (event) => {
       ==> (( The datas are in the console everytime you click on send. i think i'll ask you again about how to do that. ))
  - Read the  API response and count how many appointments are in the system => Add this to the page under or above the form  HINT: use innerHTML
       ==> (( adding a <p> tag and then changin the html of it! ))
- - Implement a confirmation dialog before sending the form => HINT search for `javascript confirmation alert` 
+ - Implement a confirmation dialog before sending the form => HINT search for `javascript confirmation alert`
       ==> ((added an alert before the form. Hesitated with the confirm that would change the text and the code. ))
  - Bonus: Add a dialog with a login form.( no need to connect it to the API we will do this together later)
       ==> (( adding a dialog under the modal. Using the code written to avoid to repeat it. ))
@@ -235,3 +239,10 @@ form.addEventListener("submit", (event) => {
  Notes: from now on you need to pay attention to be DRY => Do not Repeat Yourself
 */
 
+/* Notes
+1. choose a design
+2. start a new github repository
+3. customize the design and create it with vue
+4. publish it
+5. add stuff to it
+*/
